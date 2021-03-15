@@ -1,0 +1,63 @@
+body
+{
+  background-color: white;
+  margin: 0px;
+  padding: 10%;
+  font-size: x-large;
+}
+
+.mainTitle
+{
+  font-family: "Comfortaa";
+  font-size: 600%;
+  width: auto;
+  padding: 0%;
+  margin-top: -1%;
+  padding-left: 4%;
+  color: white;
+  height: 100%;
+  position: fixed;
+  text-shadow: 0px 0px 13px rgb(200,200,200);
+  z-index: -1;
+}
+
+.dashboard
+{
+	border-radius: 100px;
+	padding: 4%;
+	margin-top: 50%;
+	background-color: white;
+	box-shadow: 0px 0px 13px rgb(200,200,200);
+}
+
+.dashboardTitle
+{
+	font-family: "Comfortaa";
+	color: black;
+	padding-left: 4%;
+}
+
+.contact
+{
+	font-family: "Comfortaa";
+	border-radius: 47px;
+	padding: 4%;
+	margin: 2%;
+	background-color: white;
+
+	box-shadow: 0px 0px 13px rgb(200,200,200);
+	transition: all 0.25s;
+}
+
+.contact:hover
+{
+	box-shadow: 0px 0px 13px black;
+	transform: scale(1.07);
+}
+
+
+
+
+
+
+

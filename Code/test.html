@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Industry Partner Database</title>
+
+    <!-- CSS 3 EXTERNAL -->
+    <link href="request_dark.css" id="rS" rel="stylesheet" type="text/css">
+    <link href="test_dark.css" id="tS" rel="stylesheet" type="text/css">
+    <link href="export_dark.css" id="eS" rel="stylesheet" type="text/css">
+    <link href="help_dark.css" id="hS" rel="stylesheet" type="text/css">
+    <link href="mobile_dark.css" id="mS" rel="stylesheet" type="text/css">
+
+    <!-- CSS FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- JavaScript (INTERNAL) -->
+    <script>
+
+    var d = new Date();
+
+    function swapStylesheet(sheet, name) 
+    {
+        document.getElementById(name).setAttribute('href', sheet);
+    }
+
+    if (d.getHours() >= 6 && d.getHours() < 180)
+    {  
+        swapStylesheet("request_bright.css", "rS");
+        swapStylesheet("test_bright.css", "tS");
+        swapStylesheet("export_bright.css", "eS");
+        swapStylesheet("help_bright.css", "hS");
+        swapStylesheet("mobile_bright.css", "mS");
+    }
+    else
+    {
+        swapStylesheet("request_dark.css", "rS");
+        swapStylesheet("test_dark.css", "tS");
+        swapStylesheet("export_dark.css", "eS");
+        swapStylesheet("help_dark.css", "hS");
+        swapStylesheet("mobile_dark.css", "mS");
+    }
+
+  </script>
+
+  </head>
+
+  <body>
+
+    <div id="layer"></div>
+
+      <!-- Top Bar Arc Structure -->
+      <div id="topBar">
+
+      <!-- <img class="icon" src="lotus_dark.png" style="left: 4%;width: 2.5em;"> -->
+          
+           <button class="linkB" style="float: left">Industry Partner Database</button>
+
+          <button class="linkB" style="float: right">Help
+          <i class='far fa-question-circle'></i></button>
+
+          <button class="linkB" style="float: right">Close 
+            <i class='far fa-times-circle'></i></button>
+
+          <button id="exportIcon" class="linkB" style="float: right">Export
+            <i class='fas fa-arrow-circle-down'></i></button>
+
+          <button id="searchIcon" class="linkB" style="float: right">Search
+          <i class='fab fa-sistrix'></i></button>
+
+          
+<!--
+      <img class="icon" id="searchIcon" src="search_dark.png" style="float: right;position: relative">
+      <img class="icon" id="exportIcon" src="download_dark.png" style="float: left;position: relative">
+      <button id="helpButton" class="icon" style="float: left;position: relative">?</button>
+-->
+
+
+      </div>
+
+    <!-- EXPORT DIV START -->
+
+    <div id="exportDiv" class="alertDiv">
+
+      <h1>Export Search Results for "mechanic<?php echo $_POST["searchBar"]; ?>"</h1>
+
+      <form action="exportSearch.php" method="POST">
+          <label>Download as </label>
+          <input type="fileName" id="fileName" name="fileName" placeholder="Industry Data">
+
+          <button class="downloadButton" type="submit"><img class=downloadIcon 
+            id="downloadImg" src="download_bright.png"></button>
+      </form>
+      
+    </div>
+
+    <!-- SEARCH EXPORT SCRIPT START -->
+
+    <script type="text/javascript">
+
+    var x = document.getElementById("searchBar");
+    var y = document.getElementById("searchContent");
+
+    function myFunction() 
+    {
+      y.value = x.value;
+    }
+
+    myFunction(); // when page is ready
+
+    document.getElementById("searchBar").addEventListener("keyup", myFunction);
+
+    </script>
+
+    <!-- SEARCH EXPORT SCRIPT END -->
+
+    <script type="text/javascript">
+    var d = new Date();
+    var downloadIcons = document.getElementsByClassName("downloadIcon");
+
+    if (d.getHours() >= 6 && d.getHours() < 18)
+    {  
+        for (var i = downloadIcons.length - 1; i >= 0; i--) {
+          downloadIcons[i].src = "download_bright.png";
+        }
+    }
+    else
+    {
+        for (var i = downloadIcons.length - 1; i >= 0; i--) {
+          downloadIcons[i].src = "download_dark.png";
+        }    
+    }
+
+    </script>
+
+    <!-- EXPORT DIV END -->
+
+    <!-- EXPORT DIV FUNCTIONALITY SCRIPT START -->
+    <script type="text/javascript">
+      
+      var exportDiv = document.getElementById('exportDiv');
+      var exportIcon = document.getElementById('exportIcon');
+
+      exportIcon.onclick = function () 
+      { 
+        if (exportDiv.classList.contains("exportOn"))
+        {
+          exportDiv.classList.add("exportOff");
+          exportDiv.classList.remove("exportOn");
+
+          if (exportIcon.classList.contains("iconActive"))
+          {
+            exportIcon.classList.remove("iconActive");
+            exportIcon.classList.add("icon");
+
+            if (d.getHours() >= 6 && d.getHours() < 18)
+              exportIcon.src = "download_bright.png";
+            else
+              exportIcon.src = "download_dark.png";
+          }
+        }
+        else 
+        {
+          exportDiv.classList.add("exportOn");
+          exportIcon.classList.add("iconActive");
+          exportIcon.classList.remove("icon");
+
+          if (d.getHours() >= 6 && d.getHours() < 18)
+              exportIcon.src = "close_bright.png";
+            else
+              exportIcon.src = "close_dark.png";
+
+          exportDiv.classList.add("exportOn");
+          
+          if (exportDiv.classList.contains("exportOff"))
+            exportDiv.classList.remove("exportOff");
+        }
+
+      };
+
+    </script>
+    <!-- EXPORT DIV FUNCTIONALITY SCRIPT END -->
+
+
+      <div class="dashboard">
+
+        <div class="widget">
+
+          <h1 class="widgetTitle">Good Evening! 
+            <i class='far fa-times-circle' style="float: right; margin-right: 2%"></i></h1>
+
+          <p style="margin-left: 2.5%">No new results today. </p>
+          
+        </div>
+
+        <div class="widget">
+
+          <h1 class="widgetTitle">Today</h1>
+
+          <table class="dataTable">
+            
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+          </table>
+          
+        </div>
+
+
+        <div class="widget">
+
+          <h1 class="widgetTitle">Recent</h1>
+
+          <table class="dataTable">
+            
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+          </table>
+          
+        </div>
+        
+      </div>
+
+       <form name="searchForm" action="" method="post">
+          <div id="searchBarDiv">
+             
+            <button id="searchButtonIcon" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search...">
+          </div>
+        </form>
+
+      <div class="searchResultsDiv">
+        
+        <div class="widget">
+
+        <h1 class="widgetTitle">Search Results</h1>
+
+           <table class="dataTable">
+            
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhadsadjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+            <tr>
+              
+              <td>Sailesh Rajanala</td>
+              <td>Apple Inc. ahbdhjbhasdbhjs</td>
+              <td>Guest Speaker</td>
+              <td> ></td>
+
+            </tr>
+
+          
+        </table>
+        
+      </div>
+
+       </div>
+
+      <!-- RESULTS PREVIEW -->
+
+
+     
+
+    <!-- <div class="preview">
+
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        
+        <div class="previewSection">
+
+        Position Title :
+        <br><br>
+        Workplace :
+        <br><br>
+        LinkedIn : 
+        <br><br>
+        Current Status :
+
+        </div>
+
+        <div class="previewSection">
+
+        Notes
+        <br><br>
+        adsbjkksad
+        adsdas
+
+        </div>
+
+        <div class="previewSection">
+
+        Email : <a href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+        <br><br>
+        Phone : 3164099541
+
+        </div>
+
+    </div> -->
+
+ <!-- SEARCH BAR GRAPHIC SCRIPT -->
+ <script type="text/javascript">
+
+  var d = new Date();
+    
+    document.getElementById('searchBar').onfocus = function() 
+    {
+      if (d.getHours() >= 6 && d.getHours() < 18)
+      {  
+        document.getElementById("searchBarDiv").style.backgroundColor = 'black';
+        //document.getElementById("searchBarDiv").style.boxShadow = "none";
+        document.getElementById("searchButtonIcon").style.boxShadow = "none";
+
+      }
+      else
+      {
+        document.getElementById("searchBarDiv").style.backgroundColor = 'white';
+      }
+
+      document.getElementById("searchBarDiv").style.padding = '0.7%';
+      document.getElementById("searchBarDiv").style.paddingLeft = '1.3%';
+      document.getElementById("searchBarDiv").style.margin = '-0.7%';
+      document.getElementById("searchBarDiv").style.marginRight = '1.3%';
+    };
+
+    // CrossBrowserCompatible Method for FocusOut below
+    document.getElementById('searchBar').addEventListener("focusout", onFocusOff);
+
+    function onFocusOff() 
+    {
+      if (d.getHours() >= 6 && d.getHours() < 18)
+      {  
+        document.getElementById("searchBarDiv").style.backgroundColor = 'white';
+        //document.getElementById("searchBarDiv").style.boxShadow = "0px 13px 26px rgb(200,200,200)";
+        document.getElementById("searchButtonIcon").style.boxShadow = "0px 0px 13px rgb(200,200,200)";
+      }
+      else
+      {
+        document.getElementById("searchBarDiv").style.backgroundColor = 'rgb(25,25,25)';
+      }
+      document.getElementById("searchBarDiv").style.padding = '0%';
+      document.getElementById("searchBarDiv").style.margin = '0%';
+    };
+
+ </script>
+
+    <!-- SEARCHICON FUNCTIONALITY SCRIPT -->
+    <script type="text/javascript">
+      
+      var searchIcon = document.getElementById('searchIcon');
+      var dashBoard = document.getElementsByClassName('dashboard')[0];
+      var searchBar = document.getElementById("searchBarDiv");
+
+      var d = new Date();
+
+      if (d.getHours() >= 6 && d.getHours() < 18)
+        searchIcon.src = "search_bright.png";
+
+      searchBar.style.display = "none";
+
+      searchIcon.onclick = function () 
+      { 
+        if (searchBar.classList.contains("bubblegumOn"))
+        {
+          searchBar.classList.add("bubblegumOff");
+          searchBar.classList.remove("bubblegumOn");
+
+          if (searchIcon.classList.contains("iconActive"))
+          {
+            searchIcon.classList.remove("iconActive");
+            searchIcon.classList.add("icon");
+
+            if (d.getHours() >= 6 && d.getHours() < 18)
+              searchIcon.src = "search_bright.png";
+            else
+              searchIcon.src = "search_dark.png";
+          }
+
+            dashBoard.style.display = "block";
+            dashBoard.style.animationDelay = "0s";
+            dashBoard.classList.remove("hideBelow");
+        }
+        else 
+        {
+          dashBoard.style.animationDelay = "0s";
+          dashBoard.classList.add("hideBelow");
+
+          searchIcon.classList.add("iconActive");
+          searchIcon.classList.remove("icon");
+
+          if (d.getHours() >= 6 && d.getHours() < 18)
+              searchIcon.src = "close_bright.png";
+            else
+              searchIcon.src = "close_dark.png";
+
+          // searchBar.style.display = 'block';
+          searchBar.style.display = 'flex'; //necessary for button on input field
+
+          searchBar.classList.add("bubblegumOn");
+          
+          if (searchBar.classList.contains("bubblegumOff"))
+            searchBar.classList.remove("bubblegumOff");
+        }
+
+        searchBar.addEventListener("animationend", 
+
+          function() 
+          {
+            if (searchBar.classList.contains("bubblegumOff"))
+            {
+                searchBar.style.display = 'none';
+            }
+          }
+
+        );
+
+        dashBoard.addEventListener("animationend", 
+
+          function() 
+          {
+            if (dashBoard.classList.contains("hideBelow"))
+            {
+                dashBoard.style.display = 'none';
+            }
+          }
+
+        );
+      };
+
+    </script>
+
+    <!-- HELP DIV START -->
+
+    <div id="helpDiv">
+
+      <h1>Help?</h1>
+
+      <div class="helpArticle">
+
+        <h2>Navigating Around < > </h2>
+        
+        <ul>
+          <li>You can always return <b>home</b> by clicking the <br><br>
+            <b>"Industry Partner Database"</b> <br><br> 
+            link on the top middle of the screen
+          </li>
+            <br>
+
+          <li>
+            You can click on a record to access its full details
+            <br>
+            
+            <br>
+            You can click the <b>(X)</b> button to dismiss a record's preview
+          </li>
+          <br>
+
+          <li>
+            You can use the <b>Search Icon</b> on the top right corner to search for records.
+            <br><br>
+            <img class="helpSearchIcon" src="search_bright.png" width="35px">
+          </li>
+          <br>
+          
+          <li>
+            You can use the <b>Download Icon</b> on the top left corner to export data.
+            <br><br>
+            <img class="helpDownloadIcon" src="download_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+            You can click the <b>Close Icon</b> to dismis either Search or Export operations.
+            <br><br>
+            <img class="helpCloseIcon" src="close_bright.png" width="35px">
+          </li>
+          <br>
+        </ul>
+
+      </div>
+
+      <div class="helpArticle">
+
+        <h2>Search?</h2>
+        
+        <p></p>
+
+        <ul>
+          <li>To start a search, click the <b>Search Icon</b> on the top right corner<br><br>
+            <img class="helpSearchIcon" src="search_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+            To dismiss the search operation, click the <b>Close Icon</b>
+            <br><br>
+            <img class="helpCloseIcon" src="close_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+            To search for something, type it in the <b>Search Bar</b> <br><br> 
+            Click the <b>Search Icon</b> <br><b>
+            or </b><br> 
+            Press the <b>"Enter"</b> key
+          </li>
+          <br>
+
+          <li>To go back and view all records, click the <br><br>
+            <b>"Industry Partner Database"</b> <br><br> 
+            link on the top middle of the screen
+          </li>
+          <br>
+
+        </ul>
+
+      </div>
+
+      <div class="helpArticle">
+
+        <h2>Export all records?</h2>
+
+        <p>
+          You can download data 
+          as an Excel Spreadsheet 
+          <br><br> 
+          Format : <b>.xls</b>
+        </p>
+
+        <ul>
+          <li>
+          To export all data,<br> click the <b>Downlaod Icon</b> on the top left corner<br><br>
+            <img class="helpDownloadIcon" src="download_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+            To dismiss the export operation,<br> click the <b>Close Icon</b>
+            <br><br>
+            <img class="helpCloseIcon" src="close_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+           By default, the downloaded file is named as 
+           <br><br>
+           <b>"Industry Data.xls"</b>
+           <br><br>
+           You can rename it by typing the desired file name in the text box
+          </li>
+          <br>
+
+          <li>
+            Click the <b>Downlaod Icon</b> to download the file<br><br>
+            <img class="helpDownloadIcon" src="download_bright.png" width="35px">
+          </li>
+          <br>
+
+        </ul>
+
+      </div>
+
+      <div class="helpArticle">
+
+        <h2>Export only Search Results?</h2>
+        
+        <p>
+          You can download data 
+          as an Excel Spreadsheet 
+          <br><br> 
+          Format : <b>.xls</b>
+        </p>
+
+        <ul>
+
+          <li>
+          To export only the search data, <br> you need to perform a search by clicking the <b>Search Icon</b> on the top right corner<br><br>
+            <img class="helpSearchIcon" src="search_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+           To export the search resutls,<br> click the <b>Downlaod Icon</b> on the top left corner<br><br>
+            <img class="helpDownloadIcon" src="download_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+            To dismiss the export operation,<br> click the <b>Close Icon</b>
+            <br><br>
+            <img class="helpCloseIcon" src="close_bright.png" width="35px">
+          </li>
+          <br>
+
+          <li>
+           To rename the download file, <br>type the desired file name in the text box
+          </li>
+          <br>
+
+          <li>
+            Click the <b>Downlaod Icon</b> to download the file<br><br>
+            <img class="helpDownloadIcon" src="download_bright.png" width="35px">
+          </li>
+          <br>
+
+        </ul>
+
+      </div>
+
+      <div class="helpArticle" id="fontSizeHelpArticle">
+
+        <h2>Font Size?</h2>
+
+        <ul>
+          <li>
+           On a Mac, 
+           <br><br>
+           Use "Command" <b>+</b> "+" to Increase Font Size.
+           <br><br>
+           Use "Command" <b>+</b> "-" to Decrease Font Size.
+          </li>
+          <br>
+
+          <li>
+           On Windows, 
+           <br><br>
+           Use "CTRL" <b>+</b> "+" to Increase Font Size.
+           <br><br>
+           Use "CTRL" <b>+</b> "-" to Decrease Font Size.
+           <br><br>
+           You can also hold <b>"CTRL"</b> and scroll the <b>"Mouse Wheel"</b> to adjust the Font Size.
+          </li>
+          <br>
+        </ul>
+
+      </div>
+
+      <div class="helpArticle" id="displayHelpArticle">
+
+        <h2>Display?</h2>
+        <h2>Can't differentiate between elements?</h2>
+        
+        <p>Please make sure the <b>Contrast</b> Setting of your display is around 50%</p>
+
+      </div>
+
+      <div class="helpArticle">
+
+        <h2>Dismiss Help?</h2>
+
+        To dismiss Help, click on <span id="helpHelpButton" style="padding: 2.5%;padding-top:  1%;padding-bottom: 1%;margin: 1%;color: white;background-color: darkred;border-radius: 0.5em;font-size: x-large;">X</span> button on the top left of the screen
+        <br><br>
+
+      </div>
+
+      <div class="helpArticle">
+
+        <h2>Need more help?</h2>
+
+        Contact Support 
+        <br><br>
+        <a class="helpEmailLink" href="mailto:support@lotus.com">Team Lotus</a>
+        <br><br>
+
+      </div>
+
+    </div>
+
+    <!-- HELP DIV END -->
+
+    <!-- HELP DIV ICON SWITCH SCRIPT START -->
+
+    <script type="text/javascript">
+    
+    var d = new Date();
+
+    searchIcons = document.getElementsByClassName("helpSearchIcon");
+    exportIcons = document.getElementsByClassName("helpDownloadIcon");
+    closeIcons = document.getElementsByClassName("helpCloseIcon");
+
+    if (d.getHours() >= 6 && d.getHours() < 18)
+    {  
+        for (var i = searchIcons.length - 1; i >= 0; i--) {
+          searchIcons[i].src = "search_bright.png";
+        }
+
+        for (var i = closeIcons.length - 1; i >= 0; i--) {
+          closeIcons[i].src = "close_bright.png";
+        }
+
+        for (var i = exportIcons.length - 1; i >= 0; i--) {
+          exportIcons[i].src = "download_bright.png";
+        }
+        document.getElementById('helpHelpButton').style.backgroundColor = "red";
+    }
+    else
+    {
+        for (var i = searchIcons.length - 1; i >= 0; i--) {
+          searchIcons[i].src = "search_dark.png";
+        }
+
+        for (var i = closeIcons.length - 1; i >= 0; i--) {
+          closeIcons[i].src = "close_dark.png";
+        }
+
+        for (var i = exportIcons.length - 1; i >= 0; i--) {
+          exportIcons[i].src = "download_dark.png";
+        }
+
+        document.getElementById('helpButton').style.color = "white";
+    }
+
+    </script>
+
+    <!-- HELP DIV ICON SWITCH SCRIPT END -->
+
+    <!-- HELP DIV FUNCTIONALITY SCRIPT START -->
+
+    <script type="text/javascript">
+      
+      var helpDiv = document.getElementById('helpDiv');
+      var helpIcon = document.getElementById('helpButton');
+
+      helpIcon.onclick = function () 
+      { 
+        if (helpDiv.classList.contains("helpOn"))
+        {
+          helpDiv.classList.add("helpOff");
+          helpDiv.classList.remove("helpOn");
+
+          if (helpIcon.classList.contains("iconActive"))
+          {
+            helpIcon.classList.remove("iconActive");
+            helpIcon.classList.add("icon");
+            helpIcon.innerHTML = "?";
+
+            if (d.getHours() >= 6 && d.getHours() < 18)
+            document.getElementById('helpButton').style.color = "black";
+            else
+            document.getElementById('helpButton').style.color = "white";
+
+            if (d.getHours() >= 6 && d.getHours() < 18)
+              helpIcon.src = "download_bright.png";
+            else
+              helpIcon.src = "download_dark.png";
+          }
+        }
+        else 
+        {
+          helpDiv.classList.add("helpOn");
+          helpIcon.classList.add("iconActive");
+          helpIcon.classList.remove("icon");
+
+          helpIcon.innerHTML = "X";
+          document.getElementById('helpButton').style.color = "white";
+
+          if (d.getHours() >= 6 && d.getHours() < 18)
+              helpIcon.src = "close_bright.png";
+            else
+              helpIcon.src = "close_dark.png";
+
+          helpDiv.classList.add("helpOn");
+          
+          if (helpDiv.classList.contains("helpOff"))
+            helpDiv.classList.remove("helpOff");
+        }
+
+      };
+
+    </script>
+    <!-- HELP DIV FUNCTIONALITY SCRIPT END -->
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+

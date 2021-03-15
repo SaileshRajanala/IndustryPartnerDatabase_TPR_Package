@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Industry Partner Database</title>
+
+    <link href="style_dark.css" id="fS" rel="stylesheet" type="text/css">
+    <link href="mobile_bright.css" id="mS" rel="stylesheet" type="text/css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+    <!-- ICONS SCRIPT -->
+    <script src="https://kit.fontawesome.com/a104d25a3e.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript (EXTERNAL) -->
+    <script src="script.js"></script>
+  
+  </head>
+
+  <body>
+
+    <div id="messageBar">
+       
+    <span id="message"></span>   
+
+    </div>
+
+    <!-- <h1 class="mainTitle"> Industry<br> Partner <br>Database </h1>
+ -->
+    <form action="https://flaggy-idea.000webhostapp.com/submit.php" method="POST">
+
+    <div class="formDiv" id="welcomeDiv">
+      <h1 style="text-align: center;">Industry Partner Form</h1>
+
+      <div class="formSection" id="welcomeFormSection"> 
+        <ul style="text-align: left;" type="none">
+          <li>
+            <i class="far fa-handshake"></i>&nbsp;&nbsp; Build Relationships with <b>Wichita State University.</b>
+          </li>
+          <li>
+            <i class="fas fa-school"></i>&nbsp;&nbsp; Get involved with University Events.
+          </li>
+          <li>
+            <i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Provide Opportunities for Students.
+          </li>
+        </ul>
+      </div>
+
+      <div class="prevNextDiv lessMargin">
+      <button class="nextButton" 
+      onclick="switchDiv('Personal_Information', 'welcomeDiv')">
+       Get Started <i class="fas fa-chevron-circle-right"></i> 
+      </button>
+      </div>
+      
+    </div>
+
+    <div class="formDiv" id="Personal_Information">
+
+        <h1 style="text-align: center;">Personal Information</h1>
+
+        <div class="formSection">
+        <div class="sideByside">
+        <div class="normalBlock noHover"> 
+        <label for="prefix">Prefix</label> 
+        <select id="prefix" name="prefix" required>
+        <option value=""></option>
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Dr">Dr</option>
+        <option value="Miss">Miss</option>
+        <option value="Sir">Sir</option>
+        <option value="Madam">Madam</option>
+        </select>
+        </div>
+
+        <div class="normalBlock noHover"> 
+        <label for="suffix">Suffix</label> 
+        <select id="suffix" name="suffix">
+        <option value=""></option>
+        <option value="Jr.">Jr.</option>
+        <option value="Sr.">Sr.</option>
+        </select>
+        </div>
+       </div>
+
+      <div class="sideByside">
+      <div class="normalBlock">  
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" required>
+      </div>
+
+      <div class="normalBlock">
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" required>
+      </div>
+      </div>
+    </div>
+    
+      <div class="formSection">
+      <div class="sideByside">
+
+      <div class="normalBlock"> 
+      <label for="email">Email</label>
+      <input type="Email" id="email" name="email" placeholder="eg. name@email.com" required>
+      </div>
+
+      <div class="normalBlock"> 
+      <label for="phone_number">Phone Number</label>
+      <input type="Phone" id="phone_number" name="phone_number" placeholder="eg. 123-456-7890"required>
+      </div>
+
+      </div>
+      </div>
+
+      <div class="prevNextDiv">
+
+      <!-- <button class="prevButton" id="next_section1" disabled>
+       <i class="fas fa-chevron-circle-left"></i> Back 
+      </button> -->
+
+      <button class="nextButton" 
+      onclick="switchDiv('Professional_Information', 'Personal_Information')">
+       Next <i class="fas fa-chevron-circle-right"></i> 
+      </button>
+
+      </div>
+
+    </div>
+
+
+<!-- ********************* -->
+
+
+    <div class="formDiv" id="Professional_Information">
+
+      <h1 style="text-align: center;">Professional Information</h1>
+
+      <div class="formSection">
+
+      <div class="sideByside">
+      <div class="normalBlock">  
+      <label for="employer">Employer</label>
+      <input type="text" id="employer" name="employer" required>
+      </div>
+
+      <div class="normalBlock">
+      <label for="job_title">Job Title</label>
+      <input type="text" id="job_title" name="job_title" required>
+      </div>
+      </div>
+      
+        <div class="sideByside">
+
+        <div class="normalBlock noHover"> 
+        <label for="state">State</label> 
+        <select id="state" name="state">
+        <option value=""></option>
+        <option value="Jr.">Jr.</option>
+        <option value="Sr.">Sr.</option>
+        </select>
+        </div>
+          
+        <div class="normalBlock noHover"> 
+        <label for="city">City</label> 
+        <select id="city" name="city" required>
+        <option value=""></option>
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Dr">Dr</option>
+        <option value="Miss">Miss</option>
+        <option value="Sir">Sir</option>
+        <option value="Madam">Madam</option>
+        </select>
+        </div>
+        
+       </div>
+     </div>
+
+      <div class="prevNextDiv">
+
+      <button class="prevButton" 
+      onclick="switchDiv('Personal_Information', 'Professional_Information')">
+       <i class="fas fa-chevron-circle-left"></i> Back 
+      </button>
+
+      <button class="nextButton" 
+      onclick="switchDiv('Education_Experience', 'Professional_Information')">
+       Next <i class="fas fa-chevron-circle-right"></i> 
+      </button>
+
+      </div>
+
+    </div>
+
+    <!-- ********************* -->
+
+
+    <!-- FORM WE ARE WORKING ON NOW -->
+    <div class="formDiv" id="Education_Experience">
+
+      <h1 style="text-align: center;">Education Experience</h1>
+
+      <div class="formSection">
+      <div class="radioBlock">  
+
+        <label>Do you have some form of college education?</label>
+        
+        <ul type="none" class="radioList">
+          <li>
+            <input type="radio" id="1" name="college_education" 
+            value="No, I have not taken any college classes">
+            <label for="1">No, I have not taken any college classes</label>
+          </li>
+
+          <li>
+            <input type="radio" id="2" name="college_education" 
+            value="Yes, I have taken some college classes">
+            <label for="2">Yes, I have taken some college classes</label>
+          </li>
+
+          <li>
+            <input type="radio" id="3" name="college_education" 
+        value="Yes, I have an Associate's degree">
+        <label for="3">Yes, I have an Associate's degree</label>
+          </li>
+
+          <li>
+            <input type="radio" id="4" name="college_education" 
+        value="Yes, I have an Technical degree">
+        <label for="4">Yes, I have an Technical degree</label>
+          </li>
+
+          <li>
+           <input type="radio" id="5" name="college_education" 
+        value="Yes, I have an Bachelor's degree">
+        <label for="5">Yes, I have an Bachelor's degree</label>
+          </li>
+
+        </ul>
+                
+      </div>
+      </div> 
+
+      <!-- CODE HERE -->
+      <div class="formSection">
+      <div class="radioBlock">
+
+      <label> Did you go to Wichita State University for your undergradudate degree? </label>
+      
+      <ul type="none" class="radioList">
+      <li>
+      <input type="radio" id="Yes" name="wichitaUndergrad" value="yes I did go to wichita state university">
+      <label for="Yes">Yes, I did go to Wichita State University</label>
+      </li>
+      <li>
+      <input type="radio" id="No" name="wichitaUndergrad" value="No, I attended different university">
+      <label for="No">No, I attended different university</label>
+      </li>
+      </ul>
+        
+      </div>
+      </div>
+
+
+      <div class="formSection">
+      <div class="radioBlock">
+
+      <label> Please select the field of your undergraduate degree: </label>
+
+      <ul type="none" class="radioList">
+      <li>
+      <input type="radio" id="Business" name="UndergradDegree" value="Business">
+      <label for="Business">Business</label>
+      </li>
+      <li>
+      <input type="radio" id="Education" name="UndergradDegree" value="Education">
+      <label for="Education">Education</label>
+      </li>
+      <li>
+      <input type="radio" id="Engineering" name="UndergradDegree" value="Engineering">
+      <label for="Engineering">Engineering</label>
+      </li>
+      <li>
+      <input type="radio" id="Health Professions" name="UndergradDegree" value="Health Professions">
+      <label for="Health Professions">Health Professions</label>
+      </li>
+      <li>
+      <input type="radio" id="Liberal Arts" name="UndergradDegree" value="Liberal Arts">
+      <label for="Liberal Arts">Liberal Arts</label>
+      </li>
+      <li>
+      <input type="radio" id="Math" name="UndergradDegree" value="Math">
+      <label for="Math">Math</label>
+      </li>
+      <li>
+      <input type="radio" id="Science" name="UndergradDegree" value="Science">
+      <label for="Science">Science</label>
+      </li>
+      </ul>
+
+      <input type="radio" id="otherUndergradDegreeRadio" name="UndergradDegree" 
+      value="otherEngDisciplineRadio">
+      <input type="text" class="otherOption" id="otherUndergradDegreeText" 
+      name="UndergradDegree" placeholder="Other">
+
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="checkBlock">
+      
+      <label> Please select the discipline of your engineering degree:</label>
+
+      <ul type="none" class="checkList">
+      
+      <li>
+      <input type="checkbox" id="Aerospace_Engineering" name="EngDiscipline" 
+      value="Aerospace Engineering">
+      <label for="Aerospace_Engineering">Aerospace Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Applied_Computing" name="EngDiscipline" 
+      value="Applied Computing">
+      <label for="Applied_Computing">Applied Computing</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Biomedical_Engineering" name="EngDiscipline" 
+      value="Biomedical Engineering">
+      <label for="Biomedical_Engineering">Biomedical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Chemical_Engineering" name="EngDiscipline" 
+      value="Chemical Engineering">
+      <label for="Chemical_Engineering">Chemical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Civil_Engineering" name="EngDiscipline" 
+      value="Civil Engineering">
+      <label for="Civil_Engineering">Civil Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Computer_Engineering" name="EngDiscipline" 
+      value="Computer Engineering">
+      <label for="Computer_Engineering">Computer Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Computer_Science" name="EngDiscipline" 
+      value="Computer Science">
+      <label for="Computer_Science">Computer Science</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Cybersecurity" name="EngDiscipline" 
+      value="Cybersecurity">
+      <label for="Cybersecurity">Cybersecurity</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Electrical_Engineering" name="EngDiscipline" 
+      value="Electrical Engineering">
+      <label for="Electrical_Engineering">Electrical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Environmental_Engineering" name="EngDiscipline" 
+      value="Environmental Engineering">
+      <label for="Environmental_Engineering">Environmental Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Engineering_Management" name="EngDiscipline" 
+      value="Engineering Management">
+      <label for="Engineering_Management">Engineering Management</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Facilities_Management" name="EngDiscipline" 
+      value="Facilities Management">
+      <label for="Facilities_Management">Facilities Management</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Industrial/Systems_Engineering" name="EngDiscipline" 
+      value="Industrial/Systems Engineering">
+      <label for="Industrial/Systems_Engineering">Industrial/Systems Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Mechatronics" name="EngDiscipline" 
+      value="Mechatronics">
+      <label for="Mechatronics">Mechatronics</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Mechanical_Engineering" name="EngDiscipline" 
+      value="Mechanical Engineering">
+      <label for="Mechanical_Engineering">Mechanical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="Product_Design_and_Manufacturing_Engineering" 
+      name="EngDiscipline" value="Product Design and Manufacturing Engineering">
+      <label for="Product_Design_and_Manufacturing_Engineering">
+      Product Design and Manufacturing Engineering</label>
+      </li>
+      </ul>
+
+      <!-- TEST for other ******* *** ** ** ** ** ** *-->
+      <input type="radio" id="otherEngDisciplineRadio" name="EngDiscipline" 
+      value="otherEngDisciplineRadio">
+      <input type="text" class="otherOption" id="otherEngDisciplineText" 
+      name="EngDiscipline" placeholder="Other">
+
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="singleBlock">
+
+      <label> What year did you earn your degree? (YYYY) </label>
+      <input type="text" name="degree_year" placeholder="eg. 2021">
+
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="radioBlock">
+
+      <label>Do you have a master's degree? </label>
+
+      <ul type="none" class="radioList">
+
+      <li>
+      <input type="radio" name="haveMastersDegree" id="yesFromWichita" value="yesFromWichita">
+      <label for="yesFromWichita">Yes, from Wichita State University</label>
+      </li>
+      <li>
+      <input type="radio" name="haveMastersDegree" id="yesFromOther" value="yesFromOther">
+      <label for="yesFromOther">Yes, from another College/University</label>
+      </li>
+      <li>
+      <input type="radio" name="haveMastersDegree" id="no" value="No">
+      <label for="no">No</label>
+      </li>
+      </ul>
+
+      </div>
+
+      <div class="singleBlock">
+      <label>Please tell us which college/university you earned your master's degree from:</label>
+      <input type="text" id="universityName" placeholder="University's Name">
+      
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="radioBlock">
+
+      <label>Please select the field of your master's degree:</label>
+
+      <ul type="none" class="radioList">
+
+      <li>
+      <input type="radio" id="MD_Business" name="mastersDegree" value="Business">
+      <label for="MD_Business">Business</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Education" name="mastersDegree" value="Education">
+      <label for="MD_Education">Education</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Engineering" name="mastersDegree" value="Engineering">
+      <label for="MD_Engineering">Engineering</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Health_Professions" name="mastersDegree" 
+      value="Health Professions">
+      <label for="MD_Health_Professions">Health Professions</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Liberal_Arts" name="mastersDegree" 
+      value="Liberal Arts">
+      <label for="MD_Liberal_Arts">Liberal Arts</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Math" name="mastersDegree" value="Math">
+      <label for="MD_Math">Math</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Science" name="mastersDegree" value="Science">
+      <label for="MD_Science">Science</label>
+      </li>
+      <li>
+      <input type="radio" id="MD_Other" name="mastersDegree" value="Other">
+      <label for="MD_Other">Other</label>
+      </li>
+      </ul>
+
+      </div>
+      </div>
+
+
+      <!-- MASTER ENGINEERING DISCIPLINE START -->
+      <div class="formSection">
+      <div class="checkBlock">
+      
+      <label> Please select the discipline of your engineering degree:</label>
+
+      <ul type="none" class="checkList">
+      
+      <li>
+      <input type="checkbox" id="masters_Aerospace_Engineering" name="mastersEngDiscipline" 
+      value="Aerospace Engineering">
+      <label for="masters_Aerospace_Engineering">Aerospace Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Applied_Computing" name="mastersEngDiscipline" 
+      value="Applied Computing">
+      <label for="masters_Applied_Computing">Applied Computing</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Biomedical_Engineering" name="mastersEngDiscipline" 
+      value="Biomedical Engineering">
+      <label for="masters_Biomedical_Engineering">Biomedical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Chemical_Engineering" name="mastersEngDiscipline" 
+      value="Chemical Engineering">
+      <label for="masters_Chemical_Engineering">Chemical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Civil_Engineering" name="mastersEngDiscipline" 
+      value="Civil Engineering">
+      <label for="masters_Civil_Engineering">Civil Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Computer_Engineering" name="mastersEngDiscipline" 
+      value="Computer Engineering">
+      <label for="masters_Computer_Engineering">Computer Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Computer_Science" name="mastersEngDiscipline" 
+      value="Computer Science">
+      <label for="masters_Computer_Science">Computer Science</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Cybersecurity" name="mastersEngDiscipline" 
+      value="Cybersecurity">
+      <label for="masters_Cybersecurity">Cybersecurity</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Electrical_Engineering" name="mastersEngDiscipline" 
+      value="Electrical Engineering">
+      <label for="masters_Electrical_Engineering">Electrical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Environmental_Engineering" name="mastersEngDiscipline" 
+      value="Environmental Engineering">
+      <label for="masters_Environmental_Engineering">Environmental Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Engineering_Management" name="mastersEngDiscipline" 
+      value="Engineering Management">
+      <label for="masters_Engineering_Management">Engineering Management</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Facilities_Management" name="mastersEngDiscipline" 
+      value="Facilities Management">
+      <label for="masters_Facilities_Management">Facilities Management</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Industrial/Systems_Engineering" name="mastersEngDiscipline" 
+      value="Industrial/Systems Engineering">
+      <label for="masters_Industrial/Systems_Engineering">Industrial/Systems Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Mechatronics" name="mastersEngDiscipline" 
+      value="Mechatronics">
+      <label for="masters_Mechatronics">Mechatronics</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Mechanical_Engineering" name="mastersEngDiscipline" 
+      value="Mechanical Engineering">
+      <label for="masters_Mechanical_Engineering">Mechanical Engineering</label>
+      </li>
+      <li>
+      <input type="checkbox" id="masters_Product_Design_and_Manufacturing_Engineering" 
+      name="mastersEngDiscipline" value="Product Design and Manufacturing Engineering">
+      <label for="masters_Product_Design_and_Manufacturing_Engineering">
+      Product Design and Manufacturing Engineering</label>
+      </li>
+      </ul>
+
+      <!-- TEST for other ******* *** ** ** ** ** ** *-->
+      <input type="radio" id="otherEngDisciplineRadio" name="EngDiscipline" 
+      value="otherEngDisciplineRadio">
+      <input type="text" class="otherOption" id="otherEngDisciplineText" 
+      name="EngDiscipline" placeholder="Other">
+
+      </div>
+      </div>
+      <!-- MASTER ENGINEERING DISCIPLINE END -->
+
+      <div class="formSection">
+      <div class="singleBlock">
+
+      <label> What year did you earn your master's degree? (YYYY) </label>
+      <input type="text" name="masters_degree_year" placeholder="eg. 2021">
+      
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="radioBlock">
+
+      <label>Do you have a doctoral degree? </label>
+
+      <ul type="none" class="radioList">
+
+      <li>
+      <input type="radio" name="haveDoctrolDegree" 
+      id="doctoral_yesFromWichita" value="yesFromWichita">
+      <label for="doctoral_yesFromWichita">Yes, from Wichita State University</label>
+      </li>
+      <li>
+      <input type="radio" name="haveDoctrolDegree" 
+      id="doctoral_yesFromOther" value="yesFromOther">
+      <label for="doctoral_yesFromOther">Yes, from another College/University</label>
+      </li>
+      <li>
+      <input type="radio" name="haveDoctrolDegree" 
+      id="doctoral_no" value="No">
+      <label for="doctoral_no">No</label>
+      </li>
+      </ul>
+
+      </div>
+
+      <div class="singleBlock">
+      <label> If applicable, please list any areas of specialization that you are willing to share: </label><br>
+      <input type="text" name="special_degree" placeholder="eg. Fluid Mechanics">
+
+      </div>
+      </div>
+
+      <div class="prevNextDiv">
+
+      <button class="prevButton" 
+      onclick="switchDiv('Professional_Information','Education_Experience')">
+       <i class="fas fa-chevron-circle-left"></i> Back 
+      </button>
+
+      <button class="nextButton"
+      onclick="switchDiv('Involvement_Opportunities','Education_Experience')">
+       Next <i class="fas fa-chevron-circle-right"></i> 
+      </button>
+
+      </div>
+      </div>
+
+      <!-- *************************************** -->
+
+      <div class="formDiv" id="Involvement_Opportunities">
+      
+      <h1 style="text-align: center;">Involvement Opportunities</h1>
+
+      <div class="formSection">
+      <div class="checkBlock">
+
+      <label> How would you like to be involved with the Wichita State University College of Engineering?<br><br>(Select all that apply)<br></label>
+
+      <ul type="none" class="checkList">
+
+      <li>
+      <input type="checkbox" id="Involvement1" name="Involvement" 
+      value="Advising a team of students on a project">
+
+      <label for="Involvement1">
+        Advising a team of students on a project
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement2" name="Involvement" 
+      value="Demonstrating a technical skill or area of expertise">
+
+      <label for="Involvement2">
+        Demonstrating a technical skill or area of expertise
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement3" name="Involvement" 
+      value="Facilitate tour of your company">
+
+      <label for="Involvement3">
+        Facilitate tour of your company
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Involvement4" name="Involvement" 
+      value="Judging a competition">
+
+      <label for="Involvement4">
+        Judging a competition
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement5" name="Involvement" 
+      value="K-12 Youth Outreach such as Summer Camps, Classroom Visits, etc">
+
+      <label for="Involvement5">
+        K-12 Youth Outreach such as Summer Camps, Classroom Visits, etc
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement6" name="Involvement" 
+      value="One-Time Student Recruitment & Retention Event">
+
+      <label for="Involvement6">
+        One-Time Student Recruitment & Retention Event
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement7" name="Involvement" 
+      value="Research Partnership">
+
+      <label for="Involvement7">
+        Research Partnership
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement8" name="Involvement" 
+      value="Serving as a role model">
+
+      <label for="Involvement8">
+        Serving as a role model
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement9" name="Involvement" 
+      value="Teaching a concept">
+
+      <label for="Involvement9">
+        Teaching a concept
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement10" name="Involvement" 
+      value="Tell your personal story as it relates to work in your field">
+
+      <label for="Involvement10">
+        Tell your personal story as it relates to work in your field
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement11" name="Involvement" 
+      value="I'm not interested in involvement at this time">
+
+      <label for="Involvement11">
+        I'm not interested in involvement at this time
+      </li>
+
+      </ul>
+
+      </div>
+      </div>
+
+
+      <div class="formSection">
+      <div class="checkBlock">
+
+      <label>What is your preferred level of involvement? 
+        <br><br>(Select all that apply)<br></label>
+
+      <ul type="none" class="checkList">
+
+
+      <li>
+      <input type="checkbox" id="Involvement_Level1" name="Involvement_Level" 
+      value="A one-time event lasting 1 to 2 hours">
+
+      <label for="Involvement_Level1">
+        A one-time event lasting 1 to 2 hours
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement_Level2" name="Involvement_Level" 
+      value="A day long event">
+
+      <label for="Involvement_Level2">
+        A day long event
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Involvement_Level3" name="Involvement_Level" 
+      value="A recurring relationship over a semester">
+
+      <label for="Involvement_Level3">
+        A recurring relationship over a semester
+      </label>
+      </li>
+
+
+      </ul>
+
+      </div>
+      </div>
+
+      <div class="formSection">
+      <div class="checkBlock">
+
+      <label>What age level(s) of students would you want to work with for a recruitment or retention event?<br><br>(Select all that apply)<br></label>
+
+      <ul type="none" class="checkList">
+
+
+      <li>
+      <input type="checkbox" id="Recruitment_Level1" name="Recruitment_Level" 
+      value="Elementary School">
+
+      <label for="Recruitment_Level1">
+        Elementary School
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Recruitment_Level2" name="Recruitment_Level" 
+      value="Middle School">
+
+      <label for="Recruitment_Level2">
+        Middle School
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Recruitment_Level3" name="Recruitment_Level" 
+      value="High School">
+
+      <label for="Recruitment_Level3">
+        High School
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Recruitment_Level4" name="Recruitment_Level" 
+      value="College/University">
+
+      <label for="Recruitment_Level4">
+        College/University
+      </label>
+      </li>
+
+      </ul>
+
+      </div>
+      </div>
+
+
+      <div class="formSection">
+      <div class="checkBlock">
+
+      <label>What age(s) of students would you want to mentor?<br><br>(Select that all apply)<br></label>
+
+      <ul type="none" class="checkList">
+
+
+      <li>
+      <input type="checkbox" id="Mentor_Age1" name="Mentor_Age" 
+      value="Elementry">
+
+      <label for="Mentor_Age1">
+        Elementry
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Mentor_Age2" name="Mentor_Age" 
+      value="Middle School">
+
+      <label for="Mentor_Age2">
+        Middle School
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Mentor_Age3" name="Mentor_Age" 
+      value="High School">
+
+      <label for="Mentor_Age3">
+        High School
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Mentor_Age4" name="Mentor_Age" 
+      value="Undergraduate">
+
+      <label for="Mentor_Age4">
+        Undergraduate
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Mentor_Age5" name="Mentor_Age" 
+      value="Master's">
+
+      <label for="Mentor_Age5">
+        Master's
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Mentor_Age6" name="Mentor_Age" 
+      value="Doctoral">
+
+      <label for="Mentor_Age6">
+        Doctoral
+      </label>
+      </li>
+
+      </ul>
+
+      </div>
+      </div>
+
+
+      <div class="formSection">
+      <div class="checkBlock">
+
+      <label>We are always looking for people to serve as role models to under-represented populations. Are there certain populations you would like to work with?<br><br>(Select that all apply)<br></label>
+
+      <ul type="none" class="checkList">
+
+
+      <li>
+      <input type="checkbox" id="Role_Model1" name="Role_Model" 
+      value="First-generation college students">
+
+      <label for="Role_Model1">
+        First-generation college students
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Role_Model2" name="Role_Model"
+      value="Female">
+
+      <label for="Role_Model2">
+        Female
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Role_Model3" name="Role_Model" 
+      value="African American">
+
+      <label for="Role_Model3">
+        African American
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Role_Model4" name="Role_Model" 
+      value="Hispanic">
+
+      <label for="Role_Model4">
+        Hispanic
+      </label>
+      </li>
+
+
+      <li>
+      <input type="checkbox" id="Role_Model5" name="Role_Model" 
+      value="Veterans">
+
+      <label for="Role_Model5">
+        Veterans
+      </label>
+      </li>
+
+      <li>
+      <input type="checkbox" id="Role_Model6" name="Role_Model" 
+      value="Other">
+
+      <label for="Role_Model6">
+        Other
+      </label>
+      </li>
+
+      </ul>
+
+      </div>
+      </div>
+
+
+      <div class="formSection">
+      <div class="singleBlock">
+
+      <label> Please tell us how you want to be involved: </label>
+      <textarea id="Involvement_Notes" 
+      name="Involvement_Notes" placeholder="Notes" rows="5"></textarea>
+
+      </div>
+      </div>
+
+
+      <div class="prevNextDiv">
+
+      <button class="prevButton" 
+      onclick="switchDiv('Education_Experience','Involvement_Opportunities')">
+       <i class="fas fa-chevron-circle-left"></i> Back 
+      </button>
+
+      <button class="nextButton" type="submit">
+       Submit <i class="fas fa-chevron-circle-right"></i> 
+      </button>
+
+      </div>
+
+      </div>
+      <!-- BEFORE  HERE -->
+
+  </form> 
+  <!-- END OF THE TEST FORM -->
+  <script type="text/javascript" src="validations.js"></script>
+  <script type="text/javascript" src="formTestScript.js"></script>
+
+
+  </body>
+
+</html>

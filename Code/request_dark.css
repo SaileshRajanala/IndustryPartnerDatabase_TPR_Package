@@ -1,0 +1,466 @@
+.emailLink
+{
+	color: white;
+	background-color: transparent;
+	transition: all 0.25s;
+}
+
+.emailLink:hover
+{
+	color: aqua;
+	text-decoration: none;
+}
+
+body
+{
+	margin: 0;
+	padding: 4%;
+	color: white; 
+	background-color: black;
+	font-size: x-large;
+	font-family: 'QuickSand';
+
+	background-image: url('stars.png');
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	animation-name: blurOut;
+  	animation-delay: 1s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes blurOut
+{
+  0%
+  {
+  	-webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+  }
+}
+
+@-webkit-keyframes toplaunch
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(-74px);
+  }
+}
+
+#layer
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	display: none;
+	left: 0%;
+	top: 0%;
+	background-color: rgb(25,25,25,0.4);
+	-webkit-backdrop-filter: blur(13px);
+	backdrop-filter: blur(13px);
+}
+
+#topBar
+{
+	position: fixed;
+	margin: 0%;
+	padding: 0.5%;
+
+	text-align: center;
+	top: 0%;
+	left: 0%;
+	z-index: 9;
+
+	width: 99%;
+	background-color: rgb(1,1,1,0.1);
+	-webkit-backdrop-filter: blur(13px);
+	backdrop-filter: blur(13px);
+
+	animation-name: toplaunch;
+  	animation-delay: 0.5s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.dashboard
+{
+	padding: 2%;
+	margin: 2%;
+	width: 92%;
+	position: relative;
+
+	animation-name: toplaunch;
+  	animation-delay: 0.5s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.widget
+{
+	padding: 2%;
+
+	background-color: rgb(25,25,25);
+	border-radius: 2em;
+	margin-bottom: 4%;
+	margin-top: 4%;
+}
+
+.widgetTitle
+{
+	padding-left: 2%;
+}
+
+.dataTable
+{
+	width: 100%;
+	padding: 1%;
+	margin: 0;
+	background-color: transparent;
+}
+
+tr
+{
+	width: 98%;
+	margin: 0%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+
+	border-radius: 100em;;
+	background-color: rgb(25,25,25);
+	display: block;
+	padding: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border: 1px solid transparent;
+	box-shadow: 0px 0px 13px black;
+
+	transition: all 0.25s;
+}
+
+tr:hover
+{
+	transform: scale(1.01);
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+tr:active
+{
+	transform: scale(0.99);
+	border: 1px solid white;
+	cursor: pointer;
+	color: black;
+	background-color: white;
+}
+
+td
+{
+	width: 22.5%;
+	background-color: transparent;
+	padding: 1%;
+
+	border-radius: 47px;
+
+	display: inline-block;
+	margin: 0%;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap;
+}
+
+.noPreview
+{
+	display: none;
+
+	animation-name: showPreview;
+	animation-fill-mode: backwards;
+	animation-duration: 0.25s;
+}
+
+.preview
+{
+	position: fixed;
+	display: block;
+	width: 66%;
+	left: 8%;
+	top: 0%;
+	background-color: rgb(25,25,25);
+	margin: 7%; 
+	padding: 2%;
+	z-index: 9;
+	color: white;
+	height: 60%;
+	overflow-y: scroll;
+
+	animation-name: showPreview;
+	animation-fill-mode: both;
+	animation-duration: 0.25s;
+
+	border-radius: 47px;
+	font-family: 'Comfortaa';
+	box-shadow: 0px 0px 13px black;
+}
+
+.previewTitle
+{
+	padding-left: 4%;
+}
+
+.previewSection
+{
+	border-radius: 35px;
+	width: 92%;
+	padding: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	box-shadow: 0px 0px 13px black;
+}
+
+.noPreview::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.noPreview 
+{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar 
+{
+    display: none;
+}
+
+body 
+{
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+@keyframes blur
+{
+	100%
+	{
+		filter: blur(25px);
+	}
+}
+
+@keyframes showPreview
+{
+	0%
+	{
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.blurDiv
+{
+	animation-name: blur;
+	animation-fill-mode: both;
+	animation-duration: 0.25s;
+}
+
+.blurDivOff
+{
+	animation-name: blur;
+	animation-fill-mode: backwards;
+	animation-duration: 0.25s;
+}
+
+.uiButton,#close,.uiButtonOn
+{
+	font-family: 'Comfortaa';
+	font-size: large;
+	padding: 2%;
+	padding-right: 4%;
+	padding-left: 4%;
+	background-color: rgb(25,25,25);
+	color: white;
+	border: none;
+	border-radius: 47px;
+	transition: all 0.25s;
+	box-shadow: 0px 0px 13px black;
+}
+
+.uiButton:hover,#close:hover,.uiButtonOn:hover
+{
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+.uiButton:active,#close:active,.uiButtonOn:active
+{
+	transform: scale(0.74);
+}
+
+.uiButtonOff
+{
+	animation-name: gravity;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes gravity
+{
+	100%
+	{
+		bottom: -47%;
+	}
+}
+
+.uiButtonOn
+{
+	animation-name: antigravity;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes antigravity
+{
+	100%
+	{
+		bottom: 10%;
+	}
+}
+
+
+#close
+{
+	position: fixed;
+	bottom: -47%;
+	width: 10%;
+	left: 45%;
+	padding: 1%;
+	z-index: 10;
+}
+
+.stretch
+{
+	animation-name: enlarge;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes enlarge
+{
+	100%
+	{
+		height: 100%;
+		-webkit-backdrop-filter: blur(47px);
+		backdrop-filter: blur(47px);
+	}
+}
+
+.shrink
+{
+	animation-name: minimize;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes minimize
+{
+	0%
+	{
+		height: 100%;
+	}
+}
+
+.disslove
+{
+	animation-name: fadeIn;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeIn
+{
+	100%
+	{
+		opacity: 0;
+	}
+}
+
+.appear
+{
+	animation-name: fadeOut;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeOut
+{
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+/* FIREFOX SUPPORT */
+@-moz-document url-prefix() 
+{
+  #topBar 
+  {
+    background-color: black;
+  }
+
+  #layer
+  {
+  	background-color: rgb(25,25,25);
+  }
+}
+
+.linkB 
+{
+    background-color: transparent;
+    color: white;
+    
+    font-size: x-large;
+    font-family: "QuickSand";
+    
+    border: none;
+    
+    border-radius: 5em;
+    
+    outline: none;
+    transition: all 0.25s;
+    
+    margin-left: 0.25%;
+    margin-right: 0.25%;
+    
+    padding: 0.25%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+}
+
+.linkB:hover
+{
+    box-shadow: 0px 0px 13px rgb(200,200,200);
+    cursor: pointer;
+}
+
+.linkB:active, .linkB_active, .linkB_active:hover
+{
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+.linkB_active
+{
+	transition: all 0.25s;
+}
+
+.linkB_active:active
+{
+	color: white;
+	background-color: transparent;
+	box-shadow: 0px 0px 13px rgb(200,200,200);
+}
+

@@ -1,0 +1,121 @@
+.alertDiv
+      {
+        position: fixed;
+        box-shadow: 0px 26px 52px rgb(200,200,200);
+        -webkit-backdrop-filter: blur(44px);
+        backdrop-filter: blur(13px);
+        bottom: -1000px;
+        width: 40%;
+        left: 2.5%;
+        margin: 0%;
+        padding: 1%;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+
+        font-size: large;
+        color: black;
+
+        background-color: rgb(222,222,222,0.1);
+        border-radius: 1.5em;
+        
+
+        z-index: 7;
+      }
+
+      #fileName
+      {
+        border-radius: 1000em;
+        padding: 0.5%;
+        padding-left: 2.5%;
+        box-shadow: 0px 0px 13px rgb(200,200,200);
+        padding-right: 2.5%;
+        margin: 1%;
+        width: 35%;
+        font-size: x-large;
+        font-family: QuickSand;
+        margin-top: -2%;
+
+        transition: all 0.25s;
+        border: none;
+      }
+
+      #fileName:hover
+      {
+        box-shadow: 0px 0px 13px black;
+      }
+
+      #fileName:focus
+      {
+        background-color: black;
+        color: white;
+        outline: none;
+        box-shadow: 0px 0px 13px rgb(200,200,200);
+      }
+
+      .downloadButton
+      {
+        background-color: transparent;
+        color: black;
+        border-radius: 4em;
+        font-size: xx-large;
+        text-align: center;
+        border: none;
+        box-shadow: 0px 0px 13px rgb(200,200,200);
+        margin-bottom: 0%;
+
+        transition: all 0.25s;
+      }
+
+      .downloadButton:hover
+      {
+        transform: scale(1.1);
+        background-color: black;
+        color: white;
+      }
+
+      .downloadButton:active
+      {
+        transform: scale(0.9);
+      }
+
+      .downloadIcon
+      {
+        width: 35px;
+        margin-top: 10%;
+      }
+
+      .exportOn
+      {
+        animation-name: bottomUP;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+      }
+
+      .exportOff
+      {
+        animation-name: bottomDOWN;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes bottomUP
+      {
+        100%
+        {
+          transform: translateY(-1000px);
+        }
+      }
+
+      @keyframes bottomDOWN
+      {
+        0%
+        {
+          bottom: 0px;
+        }
+
+        100%
+        {
+          opacity: 0;
+        }
+      }

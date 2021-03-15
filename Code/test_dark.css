@@ -1,0 +1,267 @@
+.linkA
+{
+	text-decoration: none;
+	color: white;
+	border-radius: 1000em;
+	padding: 1.5%;
+	margin: -1.5%;
+
+	transition: all 0.25s;
+}
+
+.linkA:hover
+{
+	box-shadow: 0px 0px 10px white;
+	background-color: black;
+	padding: 0.5%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+
+	margin: -0.5%;
+	margin-left: 0.3%;
+	margin-right: 0.3%;
+}
+
+.linkA:active
+{
+	color: black;
+	box-shadow: 0px 0px 10px black;
+	background-color: white;
+}
+
+#searchBarDiv
+{
+	background-color: rgb(25,25,25);
+	position: fixed;
+	display: flex;
+	color: white;
+	top: 10%;
+	width: 50%;
+	left: 25%;
+	z-index: 2;
+	
+	/*border-radius: 47px;*/
+	border-radius: 1000em;
+	box-shadow: 0px 13px 13px black;
+	transition: all 0.25s;
+	border: 1.5px solid transparent;
+}
+
+#searchBarDiv:hover
+{
+	border-color: white;
+}
+
+#searchBarDiv:active
+{
+	padding: 0%;
+	margin: -0%;
+}
+
+#searchButtonIcon
+{
+	background-color: rgb(44,44,44);
+	color: white;
+	font-size: xx-large;
+	border-radius: 50%;
+	padding-right: 2%;
+	padding-left: 2%;
+	border: none;
+	
+	box-shadow: 0px 0px 13px black;
+	
+	transition: all 0.25s;
+	
+}
+
+#searchButtonIcon:hover
+{
+	background-color: white;
+	cursor: pointer;
+
+	color: black;
+}
+
+#searchButtonIcon:active
+{
+	transform: scale(0.7);
+}
+
+@keyframes bubblegum
+{
+	0%
+	{
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@keyframes bubblegumReverse
+{
+	100%
+	{
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@keyframes hideDown
+{
+  100%
+  {
+    opacity: 0;
+    transform: translateY(-74px);
+  }
+}
+
+.hideBelow
+{
+	animation-name: hideDown;
+	animation-fill-mode: both;
+	animation-duration: 0.5s;
+}
+
+.bubblegumOn
+{
+	animation-name: bubblegum;
+	animation-fill-mode: both;
+	animation-duration: 0.25s;
+}
+
+.bubblegumOff
+{
+	animation-name: bubblegumReverse;
+	animation-fill-mode: both;
+	animation-duration: 0.25s;
+}
+
+#searchBar
+{
+	font-size: xx-large;
+	font-family: 'Quicksand';
+	/*float: left;*/
+	color: white;
+	padding: 1%;
+	z-index: 1;
+
+	width: 100%;
+
+	border: 1px solid transparent;
+	border-radius: 47px;
+	
+	background-color: transparent;
+	padding-left: 2%;
+	padding-right: 2%;
+
+	transition: all 0.25s;
+}
+
+/*#searchBar:hover
+{
+	border-color: white;
+}*/
+
+#searchBar:focus
+{
+	outline: none;
+	color: black;
+/*	background-color: white;
+*/}
+
+.icon, .iconActive
+{
+	width: 1.5em;
+	background-color: transparent;
+	transition: all 0.25s;
+	border-radius: 25%;
+	position: fixed;
+	top: 17%;
+	right: 5%;
+	padding: 0.2%;
+	
+	border: 1px solid transparent;
+}
+
+.icon:hover
+{
+	background-color: rgb(47,47,47);
+	cursor: pointer;
+}
+
+.iconActive:hover
+{
+	background-color: red;
+	cursor: pointer;
+}
+
+.icon:active,.iconActive:active
+{
+	transform: scale(0.7);
+}
+
+.iconActive
+{
+	background-color: darkred;
+}
+
+#searchResultsDiv
+{
+	background-color: transparent;
+	border-radius: 47px;
+	overflow-y: scroll;
+	padding: 1%;
+	position: fixed;
+	height: 67%;
+	left: 5%;
+	bottom: 4%;
+	width: 88%;
+	margin: 0;
+
+	z-index: 1;
+}
+
+#searchResultsDiv::-webkit-scrollbar 
+{
+    display: none;
+}
+
+#searchResultsDiv
+{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#searchButton
+{
+	top: 13%;
+	left: 75%;
+	color: white;
+	font-size: xx-large;
+	font-family: 'Quicksand';
+
+	position: fixed;
+	z-index: 1;
+
+	border: 1px solid transparent;
+	border-radius: 47px;
+	padding-bottom: 1%;
+	background-color: rgb(25,25,25);
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0.2%;
+
+	box-shadow: 0px 13px 13px black;
+	transition: all 0.25s;
+}
+
+#searchButton:hover
+{
+	border-color: white;
+}
+
+#searchButton:active
+{
+	transform: scale(0.7);
+}
+
+/*----------------------------------------------------------------*/
