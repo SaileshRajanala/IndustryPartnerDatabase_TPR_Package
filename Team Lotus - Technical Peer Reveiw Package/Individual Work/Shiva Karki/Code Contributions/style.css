@@ -1,0 +1,162 @@
+body
+{
+  background-color: black;
+  margin: 0px;
+  padding: 10%;
+  font-size: x-large;
+}
+
+.mainTitle
+{
+	font-family: "Comfortaa";
+	font-size: 600%;
+	width: auto;
+	padding: 0%;
+  margin-top: -1%;
+  padding-left: 4%;
+  color: white;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.formDiv
+{
+  padding: 4%;
+  background-color: gold;
+  /* background-image: linear-gradient(147deg, yellow, aqua); */
+  margin: 0;
+  border-radius: 47px;
+  background-image: url('worlds.png');
+  
+  z-index: 1;
+  margin-top: 100%;
+}
+
+.formSection
+{ 
+  background-color: transparent;
+  
+  margin: 4%;
+  padding: 2%;
+  border-radius: 47px;
+  transition: all 0.25s;
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background-color: rgb(13, 13, 13,0.4);
+}
+
+/*.formSection:hover
+{
+  margin: 4%;
+  padding: 2%;
+  border-radius: 47px;
+  box-shadow: 0px 0px 13px black;
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background-color: rgb(13, 13, 13,0.4);
+  transform: scale(1.1);
+
+}*/
+
+.sideByside
+{
+  display: flex;
+ 
+  margin: 0;
+  padding: 0;
+}
+
+.normalBlock
+{
+  display: inline;
+  width: 50%;
+  margin: 2%;
+  padding: 2%;
+  transition: all 0.25s;
+  border-radius: 47px;
+}
+.normalBlock:hover
+{
+  transform: scale(1.1);
+  /* -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background-color: rgb(13, 13, 13,0.1);   */
+}
+
+.normalBlock label, input, select, option
+{
+  mix-blend-mode: inherit;
+  display: block;
+  margin: 1%;
+  border-radius: 47px;
+  color: white;
+  border: none;
+  padding: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+  transition: all 0.5s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input
+{
+  padding: 3%;
+  padding-left: 4.7%; 
+  width: 90%;
+  font-size: x-large;
+  /* -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px); */
+}
+
+select, option
+{
+  margin: 4%;
+  color: black;
+  font-size: 125%;
+  width: 13%;
+}
+
+input
+{
+    background-color: rgb(13, 13, 13,0.4);
+}
+
+input:hover
+{
+  box-shadow: 0px 0px 13px black;
+}
+
+input[type="submit"]
+{
+  width: auto;
+  margin: 0;
+  
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  left: 80%;
+  box-shadow: 0px 0px 13px black;
+  background-color: white;
+  color: black;
+
+  position: relative;
+  transition: all 0.25s;
+}
+
+input[type="submit"]:hover
+{
+  color: white;
+  background-color: black;
+}
+
+textarea
+{
+  margin: 2%;
+  width: 92%;
+  border-radius: 25px;
+  padding: 2%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: x-large;
+}

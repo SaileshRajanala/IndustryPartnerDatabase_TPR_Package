@@ -1,0 +1,652 @@
+@media only screen and (max-width: 1000px) 
+{
+
+.emailLink
+{
+	color: white;
+	background-color: transparent;
+	transition: all 0.25s;
+}
+
+.emailLink:hover
+{
+	color: aqua;
+	text-decoration: none;
+}
+
+body
+{
+	margin: 0;
+	padding: 1%;
+	color: white; 
+	background-color: black;
+	font-size: large;
+	font-family: 'QuickSand';
+
+	animation-name: blurOut;
+  	animation-delay: 1s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes blurOut
+{
+  0%
+  {
+  	-webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+  }
+}
+
+@-webkit-keyframes toplaunch
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(-74px);
+  }
+}
+
+#layer
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	display: none;
+	left: 0%;
+	top: 0%;
+	background-color: rgb(25,25,25,0.4);
+	-webkit-backdrop-filter: blur(13px);
+	backdrop-filter: blur(13px);
+}
+
+#topBar
+{
+	position: fixed;
+	margin: 0;
+	padding: 1%;
+
+	text-align: center;
+	top: 0%;
+	left: 0%;
+	z-index: 9;
+
+	width: 98%;
+	background-color: rgb(13,13,13,0.4);
+	-webkit-backdrop-filter: blur(13px);
+	backdrop-filter: blur(13px);
+
+	animation-name: toplaunch;
+  	animation-delay: 0.5s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.dashboard
+{
+	padding: 1%;
+	margin: 1%;
+	width: 96%;
+  margin-top: 30%;
+	position: relative;
+
+	animation-name: toplaunch;
+  	animation-delay: 0.5s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.widget
+{
+	padding: 2%;
+  text-align: center;
+/*	-webkit-backdrop-filter: blur(13px);
+*/
+	background-color: transparent;
+	border-radius: 25px;
+	margin-bottom: 4%;
+	margin-top: 2%;
+}
+
+.widgetTitle
+{
+	padding-left: 4%;
+}
+
+.dataTable
+{
+	width: 100%;
+	padding: 1%;
+	margin: 0;
+	background-color: transparent;
+}
+
+tr
+{
+  text-align: left;
+	width: 98%;
+	margin: -1%;
+	margin-bottom: 4%;
+	margin-top: 1%;
+
+	border-radius: 15px;
+	background-color: rgb(25,25,25);
+	display: block;
+	padding: 2%;
+	
+	border: 1px solid transparent;
+	box-shadow: 0px 0px 13px black;
+
+	transition: all 0.25s;
+}
+
+tr:hover
+{
+	transform: scale(1.01);
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+td
+{
+	width: 22.5%;
+	background-color: transparent;
+	padding: 1%;
+
+	border-radius: 47px;
+
+	display: inline-block;
+	margin: 0%;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap;
+}
+
+.noPreview
+{
+	display: none;
+
+	animation-name: showPreview;
+	animation-fill-mode: backwards;
+	animation-duration: 0.25s;
+}
+
+.preview
+{
+	position: fixed;
+	display: block;
+	width: 92%;
+	left: 1%;
+	top: 0%;
+	background-color: rgb(25,25,25);
+	margin: 1%; 
+	margin-top: 15%; 
+	padding: 2%;
+	z-index: 9;
+	color: white;
+	height: 65%;
+	overflow-y: scroll;
+
+	animation-name: showPreview;
+	animation-fill-mode: both;
+	animation-duration: 0.25s;
+
+	border-radius: 25px;
+	font-family: 'Comfortaa';
+	box-shadow: 0px 0px 13px black;
+}
+
+.previewTitle
+{
+	padding-left: 4%;
+}
+
+.previewSection
+{
+	border-radius: 20px;
+	width: 92%;
+	padding: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	box-shadow: 0px 0px 13px black;
+}
+
+@keyframes antigravity
+{
+	100%
+	{
+		bottom: 5%;
+	}
+}
+
+#close
+{
+	position: fixed;
+	bottom: -47%;
+	width: 90%;
+	left: 5%;
+	padding: 4%;
+	z-index: 10;
+}
+
+/*********/
+
+#searchBarDiv
+{
+	background-color: rgb(25,25,25);
+	position: fixed;
+	display: flex;
+	color: white;
+	top: 10%;
+	width: 90%;
+	left: 5%;
+	z-index: 2;
+	
+	/*border-radius: 47px;*/
+	border-radius: 1000em;
+	box-shadow: 0px 13px 13px black;
+	transition: all 0.25s;
+	border: 1.5px solid transparent;
+}
+
+#searchBar
+{
+	font-size: xx-large;
+	font-family: 'Quicksand';
+	/*float: left;*/
+	color: white;
+	padding: 1%;
+	z-index: 1;
+
+	width: 100%;
+
+	border: 1px solid transparent;
+	border-radius: 47px;
+	
+	background-color: transparent;
+	padding-left: 2%;
+	padding-right: 2%;
+
+	transition: all 0.25s;
+}
+
+#searchTitleLink
+{
+  font-size: small;
+}
+
+/*********************************/
+
+#prefix
+{
+	width: 92%;
+}
+
+.mainTitle
+{
+  font-family: "Comfortaa";
+  font-size: 400%;
+  width: auto;
+  padding: 0%;
+  margin-top: 25%;
+  padding-left: 4%;
+  color: white;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+
+  animation-name: launch;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+.formDiv
+{
+  padding: 1%;
+  /* background-image: linear-gradient(147deg, yellow, aqua); */
+  margin: 0;
+  border-radius: 50px;
+  /*background-image: url('worlds.png');*/
+  background-color: black;
+
+  z-index: 1;
+  margin-top: 100%;
+  box-shadow: none;
+}
+
+.formSection
+{ 
+  background-color: black;
+  box-shadow: 0px 0px 25px black;
+
+  margin: 2%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border-radius: 25px;
+  transition: all 0.25s;
+  /*-webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);*/
+}
+
+.sideByside
+{
+  display: block;
+ 
+  margin: 0;
+  padding: 0;
+}
+
+.normalBlock
+{
+  display: block;
+  width: 92%;
+  margin: 2%;
+  padding: 2%;
+  transition: all 0.25s;
+  border-radius: 47px;
+}
+.normalBlock:hover
+{
+  transform: scale(1);
+  /* -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background-color: rgb(13, 13, 13,0.1);   */
+}
+
+label, input, select, option
+{
+  mix-blend-mode: inherit;
+  display: block;
+  margin: 1%;
+  border-radius: 47px;
+  color: white;
+  border: none;
+  padding: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+  transition: all 0.5s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input
+{
+  padding: 3%;
+/*  box-shadow: 0px 0px 13px black;
+*/  padding-left: 4.7%; 
+  width: 90%;
+  border: 1px solid transparent;
+  font-size: x-large;
+  /* -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px); */
+}
+
+select, option
+{
+  margin: 4%;
+  color: black;
+  font-size: 125%;
+  width: 13%;
+}
+
+input
+{
+    background-color: rgb(25,25,25);
+    border: 1px solid black; 
+}
+
+input:hover
+{
+    border: 1px solid white; 
+}
+
+input:focus
+{
+  background-color: white;
+  color: black; 
+  box-shadow: none;
+}
+
+input[type="submit"]
+{
+  width: 96%;
+  margin: 0;
+  margin-bottom: 7%;
+  
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  left: 2%;
+  box-shadow: 0px 0px 13px black;
+  background-color: rgb(25,25,25);
+  color: white;
+  border: 1px solid black;
+
+  position: relative;
+  transition: all 0.25s;
+}
+
+input[type="submit"]:hover
+{
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+input[type="submit"]:active
+{
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+textarea
+{
+  margin: 2%;
+  width: 92%;
+  border-radius: 20px;
+  padding: 2%;
+  border: none;
+  color: white;
+  background-color: rgb(25,25,25);
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0px 0px 13px black;
+  border: 1px solid black; 
+  font-size: x-large;
+  transition: all 0.25s;
+}
+
+textarea:hover
+{
+    border: 1px solid white;
+}
+
+/********/
+
+#thankYou
+{
+	padding: 7%;
+	font-size: 225%;
+	font-family: "Comfortaa";
+
+	animation-name: leftlaunch;
+  	animation-delay: 0.5s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.summary
+{
+	font-family: "QuickSand";
+	border-radius: 25px;
+	
+	padding: 4%;
+	margin: 1%;
+	margin-top: 4%;
+	margin-bottom: 7%;
+
+	box-shadow: none;
+	background-color: transparent;
+
+	animation-name: rightlaunch;
+  	animation-delay: 1s;
+  	animation-fill-mode: both;
+  	animation-duration: 0.5s;
+}
+
+.summaryTable
+{
+	font-size: large;
+	width: 102%;
+	margin: -2%;
+	padding: 4%;
+	border-radius: 25px;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+
+	transition: all 0.25s;
+}
+
+.summaryTable:hover
+{
+	transform: scale(1);
+	box-shadow: none;
+	border: none;
+}
+
+td
+{	
+	width: 100%;
+	border-radius: 47px;
+	padding: 1%;
+	
+	display: block;
+}
+
+tr
+{
+	transition: all 0.1s;
+	display: block;
+	border-radius: 15px;
+	transition: all 0.25s;
+}
+
+tr:hover
+{
+	background-color: white;
+	color: black;
+}
+
+/* EXPORT *********************/
+
+.alertDiv
+{
+        position: fixed;
+        
+        box-shadow: 0px 0px 13px black;
+        bottom: -600px;
+        width: 88%;
+        left: 0%;
+        margin: 2%;
+        /*height: 50%;*/
+        padding: 4%;
+        
+        padding-bottom: 10%;
+
+        text-align: center;
+
+        font-size: large;
+        color: white;
+
+        border-radius: 2.5em;
+        
+
+        z-index: 7;
+
+        -webkit-backdrop-filter: blur(44px);
+        backdrop-filter: blur(13px);
+      }
+
+      #fileName
+      {
+        
+        text-align: center;
+        padding: 2%;
+        width: 88%;
+        color: white;
+        
+        margin: 4%;
+        
+        margin-top: 4%;
+
+        transition: all 0.25s;
+        border: 1px solid white;
+
+        -webkit-backdrop-filter: blur(13px);
+        backdrop-filter: blur(13px);
+
+      }
+
+      .downloadIcon
+      {
+        width: 70px;
+        margin-top: 10%;
+      }
+
+      @keyframes bottomUP
+      {
+        100%
+        {
+          transform: translateY(-600px);
+        }
+      }
+
+/******HELP DIV******/
+
+#fontSizeHelpArticle, #displayHelpArticle
+{
+	display: none;
+}
+
+.helpEmailLink
+{
+  font-size: x-large; 
+}
+
+#helpDiv
+{ 
+  top: 4%;
+  bottom: 0%;	
+  width: 96%;       
+  z-index: 2;
+  border-radius: 0em;
+  font-size: large;
+}
+
+#helpButton
+{
+  font-size: x-large;
+  left: 12%;
+  top: -1%;
+}
+
+#homeNavButton
+{
+  font-size: large;
+}
+
+.navLabel
+{
+  display: none;
+}
+
+#todaySummary
+{
+  background-color: rgb(25,25,25);
+  box-shadow: 0px 13px 13px black;
+}
+
+
+}
