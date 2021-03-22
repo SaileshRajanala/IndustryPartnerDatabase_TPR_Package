@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "id15084806_teamlotus";
-$password = "SlZ}D1?-NeU?>";
+$password = "SlZ}Df1?-NeUt?>/";
 
 $conn = mysqli_connect($servername, $username, $password, "id15084806_main_database");
 if (!$conn) {

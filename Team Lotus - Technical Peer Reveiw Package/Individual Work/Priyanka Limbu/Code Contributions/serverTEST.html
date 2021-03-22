@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Industry Partner Database</title>
+
+    <!-- CSS 3 EXTERNAL -->
+    <link href="request_dark.css" id="rS" rel="stylesheet" type="text/css">
+
+    <!-- TEST CSS -->
+    <link href="test_dark.css" id="tS" rel="stylesheet" type="text/css">
+    <link href="mobile_dark.css" id="mS" rel="stylesheet" type="text/css">
+    <!-- CSS FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- JavaScript (INTERNAL) -->
+    <script>
+
+    var d = new Date();
+
+    function swapStylesheet(sheet, name)
+    {
+        document.getElementById(name).setAttribute('href', sheet);
+    }
+
+    if (d.getHours() >= 6 && d.getHours() < 18)
+    {
+        swapStylesheet("request_bright.css", "rS");
+        swapStylesheet("test_bright.css", "tS");
+        swapStylesheet("mobile_bright.css", "mS");
+    }
+    else
+    {
+        swapStylesheet("request_dark.css", "rS");
+        swapStylesheet("test_dark.css", "tS");
+        swapStylesheet("mobile_dark.css", "mS");
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <button class="uiButtonOff" id="close" onclick="closePreview()">(X)</button>
+    <div id="layer"></div>
+
+    <!-- Top Bar Arc Structure -->
+    <div id="topBar">
+
+        <!-- <img class="icon" src="lotus_dark.png" style="left: 4%;width: 2.5em;"> -->
+
+              <a class="linkA" href="test.php">Industry Partner Database</a>
+
+              -> Search
+
+              <!-- <img class="icon" id="searchIcon" src="search_dark.png"> -->
+
+    </div>
+
+    <form name="searchForm" action="" method="post">
+
+        <div id="searchBarDiv">
+
+            <button id="searchButtonIcon" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search..." value="a">
+
+        </div>
+
+    </form>
+
+    <div class="dashboard"></div>
+    <!-- SEARCH SECTION -->
+
+    <div id="searchResultsDiv">
+
+        <div class="widget" id="searchResultsWidget">
+
+            <h2 class="widgetTitle">46 Search Results for "a"</h2>
+            <table class="dataTable">
+                <tr>
+                    <td>Sai Raj</td>
+                    <td>Apple</td>
+                    <td>Google</td>
+                    <td>2020-11-03 20:33:21</td>
+                </tr>
+                <tr previewPair=1>
+                    <td>subash karki</td>
+                    <td>ahdhahdh</td>
+                    <td>danajsdnj</td>
+                    <td>2020-11-05 00:43:43</td>
+                </tr>
+                <tr previewPair=2>
+                    <td>Jhin Khada</td>
+                    <td>Summoner's Rift</td>
+                    <td>Marksman</td>
+                    <td>2020-11-05 01:03:25</td>
+                </tr>
+                <tr previewPair=3>
+                    <td>Sajmsjs Hshdnd</td>
+                    <td>Mdmdm</td>
+                    <td>Jsmdm</td>
+                    <td>2020-11-05 02:12:39</td>
+                </tr>
+                <tr previewPair=4>
+                    <td>Priyanka Limbu</td>
+                    <td>Pti</td>
+                    <td>Manager</td>
+                    <td>2020-11-05 08:02:33</td>
+                </tr>
+                <tr previewPair=5>
+                    <td>priya limbu</td>
+                    <td>abc</td>
+                    <td>abc</td>
+                    <td>2020-11-06 14:13:06</td>
+                </tr>
+                <tr previewPair=6>
+                    <td>jhin khada</td>
+                    <td>lol</td>
+                    <td>sniper</td>
+                    <td>2020-11-06 19:37:56</td>
+                </tr>
+                <tr previewPair=7>
+                    <td>qe jj</td>
+                    <td>nj</td>
+                    <td>njn</td>
+                    <td>2020-11-06 20:47:10</td>
+                </tr>
+                <tr previewPair=8>
+                    <td>qe jj</td>
+                    <td>nj</td>
+                    <td>njn</td>
+                    <td>2020-11-06 20:48:32</td>
+                </tr>
+                <tr previewPair=9>
+                    <td>qe jj</td>
+                    <td>nj</td>
+                    <td>njn</td>
+                    <td>2020-11-06 20:48:53</td>
+                </tr>
+                <tr previewPair=10>
+                    <td>qe jj</td>
+                    <td>nj</td>
+                    <td>njn</td>
+                    <td>2020-11-06 20:48:58</td>
+                </tr>
+                <tr previewPair=11>
+                    <td>qe jj</td>
+                    <td>nj</td>
+                    <td>njn</td>
+                    <td>2020-11-06 20:49:10</td>
+                </tr>
+                <tr previewPair=12>
+                    <td>asds fds</td>
+                    <td>s</td>
+                    <td>s</td>
+                    <td>2020-11-06 21:00:26</td>
+                </tr>
+                <tr previewPair=13>
+                    <td>asd sad</td>
+                    <td>safestas</td>
+                    <td>dasfasf</td>
+                    <td>2020-11-06 21:12:57</td>
+                </tr>
+                <tr previewPair=14>
+                    <td>andjsj jdjsfn</td>
+                    <td>jdsfn</td>
+                    <td>ffnn</td>
+                    <td>2020-11-07 00:55:37</td>
+                </tr>
+                <tr previewPair=15>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:15:48</td>
+                </tr>
+                <tr previewPair=16>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:25:46</td>
+                </tr>
+                <tr previewPair=17>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:28:18</td>
+                </tr>
+                <tr previewPair=18>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:38:22</td>
+                </tr>
+                <tr previewPair=19>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:39:38</td>
+                </tr>
+                <tr previewPair=20>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:45:04</td>
+                </tr>
+                <tr previewPair=21>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:51:42</td>
+                </tr>
+                <tr previewPair=22>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 18:58:41</td>
+                </tr>
+                <tr previewPair=23>
+                    <td>Sailesh Rajanala</td>
+                    <td>Apple</td>
+                    <td>Senior Chief Design Officer</td>
+                    <td>2020-11-07 19:02:54</td>
+                </tr>
+                <tr previewPair=24>
+                    <td>Arthur Penn</td>
+                    <td>Dragon City </td>
+                    <td>Street Racer</td>
+                    <td>2020-11-08 16:05:48</td>
+                </tr>
+                <tr previewPair=25>
+                    <td>Sailesh Rajanala</td>
+                    <td>Sailesh Constructions</td>
+                    <td>CEO</td>
+                    <td>2020-11-10 17:17:14</td>
+                </tr>
+                <tr previewPair=26>
+                    <td>Sophia Johnson</td>
+                    <td>Sophia Industries</td>
+                    <td>Manager</td>
+                    <td>2020-11-10 18:54:22</td>
+                </tr>
+                <tr previewPair=27>
+                    <td>Shiva  Karki</td>
+                    <td>Ncell</td>
+                    <td>Developer</td>
+                    <td>2020-11-10 18:54:09</td>
+                </tr>
+                <tr previewPair=28>
+                    <td>Laura Vercetti</td>
+                    <td>Shock Inc.</td>
+                    <td>Chief Design Officer</td>
+                    <td>2020-11-12 00:43:20</td>
+                </tr>
+                <tr previewPair=29>
+                    <td>Sailesh Rajanala</td>
+                    <td>Sailesh Rajanala Industries</td>
+                    <td>CEO</td>
+                    <td>2020-11-12 00:43:43</td>
+                </tr>
+                <tr previewPair=30>
+                    <td>Shiva Karki</td>
+                    <td>Shiva Industries</td>
+                    <td>Software Developer</td>
+                    <td>2020-11-12 20:56:26</td>
+                </tr>
+                <tr previewPair=31>
+                    <td>Arthur Penn</td>
+                    <td>Shiva Industries</td>
+                    <td>UI Developer</td>
+                    <td>2020-11-12 21:03:33</td>
+                </tr>
+                <tr previewPair=32>
+                    <td>Tommy Townley</td>
+                    <td>Shiva Industries</td>
+                    <td>AR Developer</td>
+                    <td>2020-11-12 21:02:56</td>
+                </tr>
+                <tr previewPair=33>
+                    <td>Sailesh Rajanala</td>
+                    <td>Sailesh Constructions</td>
+                    <td>CEO</td>
+                    <td>2020-11-13 01:46:25</td>
+                </tr>
+                <tr previewPair=34>
+                    <td>Eivor Jora</td>
+                    <td>MerciaDemercia</td>
+                    <td>Software Developer</td>
+                    <td>2020-11-29 22:28:51</td>
+                </tr>
+                <tr previewPair=35>
+                    <td>Kevin Driscoll</td>
+                    <td>Good Food company</td>
+                    <td>Product Manager</td>
+                    <td>2020-12-05 18:20:30</td>
+                </tr>
+                <tr previewPair=36>
+                    <td>Shiva Karki</td>
+                    <td>Ncell</td>
+                    <td>MD</td>
+                    <td>2020-12-05 18:18:52</td>
+                </tr>
+                <tr previewPair=37>
+                    <td>Laura Rajar</td>
+                    <td>GameX</td>
+                    <td>Tester</td>
+                    <td>2020-12-05 18:22:23</td>
+                </tr>
+                <tr previewPair=38>
+                    <td>priya Limbu</td>
+                    <td></td>
+                    <td></td>
+                    <td>2020-12-05 20:46:00</td>
+                </tr>
+                <tr previewPair=39>
+                    <td>priya Limbu</td>
+                    <td>Hikey Industries</td>
+                    <td>Manger</td>
+                    <td>2020-12-05 20:50:09</td>
+                </tr>
+                <tr previewPair=40>
+                    <td>priya Limbu</td>
+                    <td>Hikey Industries</td>
+                    <td>Manger</td>
+                    <td>2020-12-05 20:51:46</td>
+                </tr>
+                <tr previewPair=41>
+                    <td>priya Limbu</td>
+                    <td>Hikey Industries</td>
+                    <td>Manger</td>
+                    <td>2020-12-05 20:52:52</td>
+                </tr>
+                <tr previewPair=42>
+                    <td>dfdf fddf</td>
+                    <td></td>
+                    <td></td>
+                    <td>2020-12-06 18:06:46</td>
+                </tr>
+                <tr previewPair=43>
+                    <td>Nancy Dancy</td>
+                    <td>NancyDance Inc.</td>
+                    <td>Fancy Designer</td>
+                    <td>2020-12-10 18:39:00</td>
+                </tr>
+                <tr previewPair=44>
+                    <td>Aditya N</td>
+                    <td>uhm</td>
+                    <td>eh</td>
+                    <td>2020-12-28 15:26:47</td>
+                </tr>
+                <tr previewPair=45>
+                    <td>Aditya N</td>
+                    <td></td>
+                    <td></td>
+                    <td>2020-12-28 15:31:48</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- RESULTS PREVIEW -->
+
+    <div class="noPreview" entryPair="46">
+        <h2 class="previewTitle">Mr. Sai Raj</h2>
+        <div class="previewSection">
+            Google
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : nope
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Happy bro
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:adshisd@asd.com">adshisd@asd.com</a>
+            <br>
+            <br>
+            Phone : 1234567890
+            <br>
+            <br>
+            Timestamp : 2020-11-03 20:33:21
+        </div>
+    </div>
+    <div class="noPreview" entryPair="47">
+        <h2 class="previewTitle">Mr. subash karki</h2>
+        <div class="previewSection">
+            danajsdnj
+            <br>
+            <br>
+            ahdhahdh
+            <br>
+            <br>
+            LinkedIn : ahhaha
+            <br>
+            <br>
+            Current Status : ahha
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            ajsnjasndjd
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:acharya@kar.com">acharya@kar.com</a>
+            <br>
+            <br>
+            Phone : 1233211231
+            <br>
+            <br>
+            Timestamp : 2020-11-05 00:43:43
+        </div>
+    </div>
+    <div class="noPreview" entryPair="48">
+        <h2 class="previewTitle">Ms. Jhin Khada</h2>
+        <div class="previewSection">
+            Marksman
+            <br>
+            <br>
+            Summoner's Rift
+            <br>
+            <br>
+            LinkedIn : Virtuoso444
+            <br>
+            <br>
+            Current Status : Nope
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            HAHAHHAHAHHAHA
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:khada@jhin.com">khada@jhin.com</a>
+            <br>
+            <br>
+            Phone : 44444444444
+            <br>
+            <br>
+            Timestamp : 2020-11-05 01:03:25
+        </div>
+    </div>
+    <div class="noPreview" entryPair="49">
+        <h2 class="previewTitle">Ms. Sajmsjs Hshdnd</h2>
+        <div class="previewSection">
+            Jsmdm
+            <br>
+            <br>
+            Mdmdm
+            <br>
+            <br>
+            LinkedIn : Jjdmd
+            <br>
+            <br>
+            Current Status : Mmmdmd
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Cmdmd
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:saaaaaj@jk.com">saaaaaj@jk.com</a>
+            <br>
+            <br>
+            Phone : 1231231111
+            <br>
+            <br>
+            Timestamp : 2020-11-05 02:12:39
+        </div>
+    </div>
+    <div class="noPreview" entryPair="50">
+        <h2 class="previewTitle">Ms. Priyanka Limbu</h2>
+        <div class="previewSection">
+            Manager
+            <br>
+            <br>
+            Pti
+            <br>
+            <br>
+            LinkedIn : Priya
+            <br>
+            <br>
+            Current Status : Unemployed 
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Abdudjdb
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:limbupriyanka8@gmail.com">limbupriyanka8@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3168714592
+            <br>
+            <br>
+            Timestamp : 2020-11-05 08:02:33
+        </div>
+    </div>
+    <div class="noPreview" entryPair="51">
+        <h2 class="previewTitle">Ms. priya limbu</h2>
+        <div class="previewSection">
+            abc
+            <br>
+            <br>
+            abc
+            <br>
+            <br>
+            LinkedIn : abv
+            <br>
+            <br>
+            Current Status : employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            sajfbslfslr
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:abc@gmail.com">abc@gmail.com</a>
+            <br>
+            <br>
+            Phone : 2222222222
+            <br>
+            <br>
+            Timestamp : 2020-11-06 14:13:06
+        </div>
+    </div>
+    <div class="noPreview" entryPair="52">
+        <h2 class="previewTitle">Ms. jhin khada</h2>
+        <div class="previewSection">
+            sniper
+            <br>
+            <br>
+            lol
+            <br>
+            <br>
+            LinkedIn : sniper
+            <br>
+            <br>
+            Current Status : nope
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Music lacks the cruelty of Art
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:j@k.com">j@k.com</a>
+            <br>
+            <br>
+            Phone : 4444444444
+            <br>
+            <br>
+            Timestamp : 2020-11-06 19:37:56
+        </div>
+    </div>
+    <div class="noPreview" entryPair="53">
+        <h2 class="previewTitle">Ms. qe jj</h2>
+        <div class="previewSection">
+            njn
+            <br>
+            <br>
+            nj
+            <br>
+            <br>
+            LinkedIn : nj
+            <br>
+            <br>
+            Current Status : jnj
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jaj
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:a@a.com">a@a.com</a>
+            <br>
+            <br>
+            Phone : 1212242
+            <br>
+            <br>
+            Timestamp : 2020-11-06 20:47:10
+        </div>
+    </div>
+    <div class="noPreview" entryPair="54">
+        <h2 class="previewTitle">Ms. qe jj</h2>
+        <div class="previewSection">
+            njn
+            <br>
+            <br>
+            nj
+            <br>
+            <br>
+            LinkedIn : nj
+            <br>
+            <br>
+            Current Status : jnj
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jaj
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:a@a.com">a@a.com</a>
+            <br>
+            <br>
+            Phone : 1212242
+            <br>
+            <br>
+            Timestamp : 2020-11-06 20:48:32
+        </div>
+    </div>
+    <div class="noPreview" entryPair="55">
+        <h2 class="previewTitle">Ms. qe jj</h2>
+        <div class="previewSection">
+            njn
+            <br>
+            <br>
+            nj
+            <br>
+            <br>
+            LinkedIn : nj
+            <br>
+            <br>
+            Current Status : jnj
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jaj
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:a@a.com">a@a.com</a>
+            <br>
+            <br>
+            Phone : 1212242
+            <br>
+            <br>
+            Timestamp : 2020-11-06 20:48:53
+        </div>
+    </div>
+    <div class="noPreview" entryPair="56">
+        <h2 class="previewTitle">Ms. qe jj</h2>
+        <div class="previewSection">
+            njn
+            <br>
+            <br>
+            nj
+            <br>
+            <br>
+            LinkedIn : nj
+            <br>
+            <br>
+            Current Status : jnj
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jaj
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:a@a.com">a@a.com</a>
+            <br>
+            <br>
+            Phone : 1212242
+            <br>
+            <br>
+            Timestamp : 2020-11-06 20:48:58
+        </div>
+    </div>
+    <div class="noPreview" entryPair="57">
+        <h2 class="previewTitle">Ms. qe jj</h2>
+        <div class="previewSection">
+            njn
+            <br>
+            <br>
+            nj
+            <br>
+            <br>
+            LinkedIn : nj
+            <br>
+            <br>
+            Current Status : jnj
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jaj
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:a@a.com">a@a.com</a>
+            <br>
+            <br>
+            Phone : 1212242
+            <br>
+            <br>
+            Timestamp : 2020-11-06 20:49:10
+        </div>
+    </div>
+    <div class="noPreview" entryPair="58">
+        <h2 class="previewTitle">Mrs. asds fds</h2>
+        <div class="previewSection">
+            s
+            <br>
+            <br>
+            s
+            <br>
+            <br>
+            LinkedIn : d
+            <br>
+            <br>
+            Current Status : df
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            adfsafs
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:s@aasd.com">s@aasd.com</a>
+            <br>
+            <br>
+            Phone : 12321
+            <br>
+            <br>
+            Timestamp : 2020-11-06 21:00:26
+        </div>
+    </div>
+    <div class="noPreview" entryPair="59">
+        <h2 class="previewTitle">Ms. asd sad</h2>
+        <div class="previewSection">
+            dasfasf
+            <br>
+            <br>
+            safestas
+            <br>
+            <br>
+            LinkedIn : dsfasf
+            <br>
+            <br>
+            Current Status : safasd
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            asdasdsda
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sad@sadi.com">sad@sadi.com</a>
+            <br>
+            <br>
+            Phone : 231312
+            <br>
+            <br>
+            Timestamp : 2020-11-06 21:12:57
+        </div>
+    </div>
+    <div class="noPreview" entryPair="60">
+        <h2 class="previewTitle">Ms. andjsj jdjsfn</h2>
+        <div class="previewSection">
+            ffnn
+            <br>
+            <br>
+            jdsfn
+            <br>
+            <br>
+            LinkedIn : jdnfj
+            <br>
+            <br>
+            Current Status : djknsf
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            jdnfjkn
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:s@l.com">s@l.com</a>
+            <br>
+            <br>
+            Phone : 1313
+            <br>
+            <br>
+            Timestamp : 2020-11-07 00:55:37
+        </div>
+    </div>
+    <div class="noPreview" entryPair="61">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:15:48
+        </div>
+    </div>
+    <div class="noPreview" entryPair="62">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:25:46
+        </div>
+    </div>
+    <div class="noPreview" entryPair="63">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:28:18
+        </div>
+    </div>
+    <div class="noPreview" entryPair="64">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:38:22
+        </div>
+    </div>
+    <div class="noPreview" entryPair="65">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:39:38
+        </div>
+    </div>
+    <div class="noPreview" entryPair="66">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:45:04
+        </div>
+    </div>
+    <div class="noPreview" entryPair="67">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:51:42
+        </div>
+    </div>
+    <div class="noPreview" entryPair="68">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 18:58:41
+        </div>
+    </div>
+    <div class="noPreview" entryPair="69">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            Senior Chief Design Officer
+            <br>
+            <br>
+            Apple
+            <br>
+            <br>
+            LinkedIn : batsy777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love myself.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh777@live.com">sailesh777@live.com</a>
+            <br>
+            <br>
+            Phone : 3167774444
+            <br>
+            <br>
+            Timestamp : 2020-11-07 19:02:54
+        </div>
+    </div>
+    <div class="noPreview" entryPair="70">
+        <h2 class="previewTitle">Mr. Arthur Penn</h2>
+        <div class="previewSection">
+            Street Racer
+            <br>
+            <br>
+            Dragon City 
+            <br>
+            <br>
+            LinkedIn : 
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            This form is so easy to use. I especially like the Visual effects. I also appreciate having a dark mode to work on during the night.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:apen@drcity.com">apen@drcity.com</a>
+            <br>
+            <br>
+            Phone : 9787663211
+            <br>
+            <br>
+            Timestamp : 2020-11-08 16:05:48
+        </div>
+    </div>
+    <div class="noPreview" entryPair="71">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            CEO
+            <br>
+            <br>
+            Sailesh Constructions
+            <br>
+            <br>
+            LinkedIn : SaileshRajanala
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Hi! I would like to get involved with university events and help recruit new employees for my business. I do have many projects that are suitable for Seniors majoring in Architecture to learn real life experience. I am looking forward to be involving in with the university. 
+
+            Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sailesh@rajanala.com">sailesh@rajanala.com</a>
+            <br>
+            <br>
+            Phone : 1234567890
+            <br>
+            <br>
+            Timestamp : 2020-11-10 17:17:14
+        </div>
+    </div>
+    <div class="noPreview" entryPair="72">
+        <h2 class="previewTitle">Ms. Sophia Johnson</h2>
+        <div class="previewSection">
+            Manager
+            <br>
+            <br>
+            Sophia Industries
+            <br>
+            <br>
+            LinkedIn : Sophia13
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            We have a project where we like to involve your students.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:sophia@gmail.com">sophia@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3164138790
+            <br>
+            <br>
+            Timestamp : 2020-11-10 18:54:22
+        </div>
+    </div>
+    <div class="noPreview" entryPair="73">
+        <h2 class="previewTitle">Mr. Shiva  Karki</h2>
+        <div class="previewSection">
+            Developer
+            <br>
+            <br>
+            Ncell
+            <br>
+            <br>
+            LinkedIn : Shiva1724
+            <br>
+            <br>
+            Current Status : Student
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Friendly entry for Industry Partner Database.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:ShivaKarki1724@gmail.com">ShivaKarki1724@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3162089646
+            <br>
+            <br>
+            Timestamp : 2020-11-10 18:54:09
+        </div>
+    </div>
+    <div class="noPreview" entryPair="74">
+        <h2 class="previewTitle">Ms. Laura Vercetti</h2>
+        <div class="previewSection">
+            Chief Design Officer
+            <br>
+            <br>
+            Shock Inc.
+            <br>
+            <br>
+            LinkedIn : shock2shocker
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Hello, I would like to get involved with your institution. By doing so, I would like to share or provide sponsored projects for students to work on and get meaningful experience. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:shock@shocker.com">shock@shocker.com</a>
+            <br>
+            <br>
+            Phone : 1234567890
+            <br>
+            <br>
+            Timestamp : 2020-11-12 00:43:20
+        </div>
+    </div>
+    <div class="noPreview" entryPair="75">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            CEO
+            <br>
+            <br>
+            Sailesh Rajanala Industries
+            <br>
+            <br>
+            LinkedIn : srajanala777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am very much interested in getting involved with future innovators, inventors, and achievers. Therefore, I would love to get involved with on campus activities and would also like to provide students valuable work and innovation experience. I can't wait to get started. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:saileshrajanala@email.com">saileshrajanala@email.com</a>
+            <br>
+            <br>
+            Phone : 7744777444
+            <br>
+            <br>
+            Timestamp : 2020-11-12 00:43:43
+        </div>
+    </div>
+    <div class="noPreview" entryPair="76">
+        <h2 class="previewTitle">Mr. Shiva Karki</h2>
+        <div class="previewSection">
+            Software Developer
+            <br>
+            <br>
+            Shiva Industries
+            <br>
+            <br>
+            LinkedIn : Shiva1724
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love coding and I would like to get involved with your institution to help provide current achievers some valuable real life experience in developing software tools that enrich people's life. Please contact me if with my phone number listed in this form. I can't wait to get started. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:shivakarki@gmail.com">shivakarki@gmail.com</a>
+            <br>
+            <br>
+            Phone : 1234567890
+            <br>
+            <br>
+            Timestamp : 2020-11-12 20:56:26
+        </div>
+    </div>
+    <div class="noPreview" entryPair="77">
+        <h2 class="previewTitle">Mr. Arthur Penn</h2>
+        <div class="previewSection">
+            UI Developer
+            <br>
+            <br>
+            Shiva Industries
+            <br>
+            <br>
+            LinkedIn : Arthurforreal
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love coding and I would like to get involved with your institution to help provide current achievers some valuable real life experience in developing software tools that enrich people's life. Please contact me if with my phone number listed in this form. I can't wait to get started. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:am321@gmail.com">am321@gmail.com</a>
+            <br>
+            <br>
+            Phone : 1234567880
+            <br>
+            <br>
+            Timestamp : 2020-11-12 21:03:33
+        </div>
+    </div>
+    <div class="noPreview" entryPair="78">
+        <h2 class="previewTitle">Mr. Tommy Townley</h2>
+        <div class="previewSection">
+            AR Developer
+            <br>
+            <br>
+            Shiva Industries
+            <br>
+            <br>
+            LinkedIn : tommy7
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I love coding and I would like to get involved with your institution to help provide current achievers some valuable real life experience in developing software tools that enrich people's life. Please contact me if with my phone number listed in this form. I can't wait to get started. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:tomtownley@email.com">tomtownley@email.com</a>
+            <br>
+            <br>
+            Phone : 1234557880
+            <br>
+            <br>
+            Timestamp : 2020-11-12 21:02:56
+        </div>
+    </div>
+    <div class="noPreview" entryPair="79">
+        <h2 class="previewTitle">Mr. Sailesh Rajanala</h2>
+        <div class="previewSection">
+            CEO
+            <br>
+            <br>
+            Sailesh Constructions
+            <br>
+            <br>
+            LinkedIn : srajanala777
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I would love to get involved with the university. I would love to share my passion and provide meaningful work experience to current students. Thank you.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:saileshrajanala@email.com">saileshrajanala@email.com</a>
+            <br>
+            <br>
+            Phone : 1234567890
+            <br>
+            <br>
+            Timestamp : 2020-11-13 01:46:25
+        </div>
+    </div>
+    <div class="noPreview" entryPair="80">
+        <h2 class="previewTitle">Mr. Eivor Jora</h2>
+        <div class="previewSection">
+            Software Developer
+            <br>
+            <br>
+            MerciaDemercia
+            <br>
+            <br>
+            LinkedIn : raven22
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am a Viking and I love to teach Martial Arts to Students.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:eivor@email.com">eivor@email.com</a>
+            <br>
+            <br>
+            Phone : 1231212123
+            <br>
+            <br>
+            Timestamp : 2020-11-29 22:28:51
+        </div>
+    </div>
+    <div class="noPreview" entryPair="81">
+        <h2 class="previewTitle">Mr. Kevin Driscoll</h2>
+        <div class="previewSection">
+            Product Manager
+            <br>
+            <br>
+            Good Food company
+            <br>
+            <br>
+            LinkedIn : KDriscoll
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am Interested to work with the Industry Department.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:KevinDriscoll@gmail.com">KevinDriscoll@gmail.com</a>
+            <br>
+            <br>
+            Phone : 2345678911
+            <br>
+            <br>
+            Timestamp : 2020-12-05 18:20:30
+        </div>
+    </div>
+    <div class="noPreview" entryPair="82">
+        <h2 class="previewTitle">Mr. Shiva Karki</h2>
+        <div class="previewSection">
+            MD
+            <br>
+            <br>
+            Ncell
+            <br>
+            <br>
+            LinkedIn : Karki2908
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            "Its now or never."
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:cvakark1724@gmail.com">cvakark1724@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3169285726
+            <br>
+            <br>
+            Timestamp : 2020-12-05 18:18:52
+        </div>
+    </div>
+    <div class="noPreview" entryPair="83">
+        <h2 class="previewTitle">Mr. Laura Rajar</h2>
+        <div class="previewSection">
+            Tester
+            <br>
+            <br>
+            GameX
+            <br>
+            <br>
+            LinkedIn : lr3434
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am interested in teaching students and getting involved with the university. 
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:lr74@email.com">lr74@email.com</a>
+            <br>
+            <br>
+            Phone : 1233321221
+            <br>
+            <br>
+            Timestamp : 2020-12-05 18:22:23
+        </div>
+    </div>
+    <div class="noPreview" entryPair="84">
+        <h2 class="previewTitle">Ms. priya Limbu</h2>
+        <div class="previewSection">
+            <br>
+            <br>
+            <br>
+            <br>
+            LinkedIn : 
+            <br>
+            <br>
+            Current Status : 
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:priyanka@gmail.com">priyanka@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3152346712
+            <br>
+            <br>
+            Timestamp : 2020-12-05 20:46:00
+        </div>
+    </div>
+    <div class="noPreview" entryPair="85">
+        <h2 class="previewTitle">Ms. priya Limbu</h2>
+        <div class="previewSection">
+            Manger
+            <br>
+            <br>
+            Hikey Industries
+            <br>
+            <br>
+            LinkedIn : priya87
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am very interested in being involved with the university. I would like to provide internship opportunities to future innovators.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:priyanka@gmail.com">priyanka@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3152346712
+            <br>
+            <br>
+            Timestamp : 2020-12-05 20:50:09
+        </div>
+    </div>
+    <div class="noPreview" entryPair="86">
+        <h2 class="previewTitle">Ms. priya Limbu</h2>
+        <div class="previewSection">
+            Manger
+            <br>
+            <br>
+            Hikey Industries
+            <br>
+            <br>
+            LinkedIn : priya87
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am very interested in being involved with the university. I would like to provide internship opportunities to future innovators.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:priyanka@gmail.com">priyanka@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3152346712
+            <br>
+            <br>
+            Timestamp : 2020-12-05 20:51:46
+        </div>
+    </div>
+    <div class="noPreview" entryPair="87">
+        <h2 class="previewTitle">Ms. priya Limbu</h2>
+        <div class="previewSection">
+            Manger
+            <br>
+            <br>
+            Hikey Industries
+            <br>
+            <br>
+            LinkedIn : priya87
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            I am very interested in being involved with the university. I would like to provide internship opportunities to future innovators.
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:priyanka@gmail.com">priyanka@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3152346712
+            <br>
+            <br>
+            Timestamp : 2020-12-05 20:52:52
+        </div>
+    </div>
+    <div class="noPreview" entryPair="88">
+        <h2 class="previewTitle">Mr. dfdf fddf</h2>
+        <div class="previewSection">
+            <br>
+            <br>
+            <br>
+            <br>
+            LinkedIn : 
+            <br>
+            <br>
+            Current Status : 
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:dfdf@gmail.com">dfdf@gmail.com</a>
+            <br>
+            <br>
+            Phone : 3162223333
+            <br>
+            <br>
+            Timestamp : 2020-12-06 18:06:46
+        </div>
+    </div>
+    <div class="noPreview" entryPair="89">
+        <h2 class="previewTitle">Ms. Nancy Dancy</h2>
+        <div class="previewSection">
+            Fancy Designer
+            <br>
+            <br>
+            NancyDance Inc.
+            <br>
+            <br>
+            LinkedIn : nancy3322
+            <br>
+            <br>
+            Current Status : Employed
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:nancy@fancy.com">nancy@fancy.com</a>
+            <br>
+            <br>
+            Phone : 2221222111
+            <br>
+            <br>
+            Timestamp : 2020-12-10 18:39:00
+        </div>
+    </div>
+    <div class="noPreview" entryPair="90">
+        <h2 class="previewTitle">Mr. Aditya N</h2>
+        <div class="previewSection">
+            eh
+            <br>
+            <br>
+            uhm
+            <br>
+            <br>
+            LinkedIn : Nope
+            <br>
+            <br>
+            Current Status : Nope
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+            Nice page
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:hikkyhikigaya@gmail.com">hikkyhikigaya@gmail.com</a>
+            <br>
+            <br>
+            Phone : 7981185364
+            <br>
+            <br>
+            Timestamp : 2020-12-28 15:26:47
+        </div>
+    </div>
+    <div class="noPreview" entryPair="91">
+        <h2 class="previewTitle">Mr. Aditya N</h2>
+        <div class="previewSection">
+            <br>
+            <br>
+            <br>
+            <br>
+            LinkedIn : 
+            <br>
+            <br>
+            Current Status : 
+        </div>
+        <div class="previewSection">
+             Notes 
+            <br>
+            <br>
+        </div>
+        <div class="previewSection">
+            Email : 
+            <a class="emailLink" href="mailto:hikkyhikigaya@gmail.com">hikkyhikigaya@gmail.com</a>
+            <br>
+            <br>
+            Phone : 7981185364
+            <br>
+            <br>
+            Timestamp : 2020-12-28 15:31:48
+        </div>
+    </div>
+    <script type="text/javascript">
+
+    var scroll_Y = 0;
+
+    function previewDiv(i)
+    {
+        targets = document.getElementsByClassName('noPreview');
+
+        for (var k = 0; k < targets.length; k++)
+            if (i == k)
+            {
+                scroll_Y = window.scrollY;
+
+                //document.getElementsByClassName('widget')[0].style.opacity = "0";
+                document.getElementsByClassName('dashboard')[0].style.position = "fixed";
+                document.getElementsByClassName('dashboard')[0].style.width = "84%";
+
+                targets[i].classList.add('preview');
+
+                document.getElementById('layer').style.display = 'block';
+
+                document.getElementById('close').classList.add('uiButtonOn');
+                document.getElementById('close').classList.remove('uiButtonOff');
+            }
+    }
+
+    function closePreview()
+    {
+        targets = document.getElementsByClassName('noPreview');
+
+        for (var k = 0; k < targets.length; k++)
+            targets[k].classList.remove('preview');
+
+        //document.getElementsByClassName('widget')[0].style.opacity = "1";
+        document.getElementsByClassName('dashboard')[0].style.position = "relative";
+        document.getElementsByClassName('dashboard')[0].style.width = "92%";
+
+        window.scrollTo(0, scroll_Y);
+        document.getElementById('layer').style.display = 'none';
+
+        document.getElementById('close').classList.add('uiButtonOff');
+        document.getElementById('close').classList.remove('uiButtonOn');
+    }
+
+    // entries = document.getElementsByTagName('tr');
+
+    // for (var k = 0; k < entries.length; k++)
+    //   entries[k].onmousedown = function() {previewDiv(k)};
+
+    var rowIndex = 0;
+
+    var tables = document.getElementsByClassName("dataTable");
+
+    for (var f = 0; f < tables.length; f++)
+    {
+        var rows = tables[f].getElementsByTagName("tr");
+
+        for (var i = 0; i < rows.length; i++)
+        {
+            var currentRow = tables[f].rows[i];
+
+            var createClickHandler = function(row, rowIndex)
+            {
+                return function()
+                {
+                    previewDiv(rowIndex);
+                };
+            };
+
+            currentRow.onclick = createClickHandler(currentRow, rowIndex);
+            rowIndex++;
+        }
+
+    }
+    </script>
+
+    <!-- SEARCH BAR GRAPHIC SCRIPT -->
+    <script type="text/javascript">
+
+    var d = new Date();
+
+    document.getElementById('searchBar').onfocus = function()
+    {
+        if (d.getHours() >= 6 && d.getHours() < 18)
+        {
+            document.getElementById("searchBarDiv").style.backgroundColor = 'black';
+            //document.getElementById("searchBarDiv").style.boxShadow = "none";
+            document.getElementById("searchButtonIcon").style.boxShadow = "none";
+        }
+        else
+        {
+            document.getElementById("searchBarDiv").style.backgroundColor = 'white';
+        }
+
+        document.getElementById("searchBarDiv").style.padding = '0.7%';
+        document.getElementById("searchBarDiv").style.paddingLeft = '1.3%';
+        document.getElementById("searchBarDiv").style.margin = '-0.7%';
+        document.getElementById("searchBarDiv").style.marginRight = '1.3%';
+    };
+
+    // CrossBrowserCompatible Method for FocusOut below
+    document.getElementById('searchBar').addEventListener("focusout", onFocusOff);
+
+    function onFocusOff()
+    {
+        if (d.getHours() >= 6 && d.getHours() < 18)
+        {
+            document.getElementById("searchBarDiv").style.backgroundColor = 'white';
+            //document.getElementById("searchBarDiv").style.boxShadow = "0px 13px 26px rgb(200,200,200)";
+            document.getElementById("searchButtonIcon").style.boxShadow = "0px 0px 13px rgb(200,200,200)";
+        }
+        else
+        {
+            document.getElementById("searchBarDiv").style.backgroundColor = 'rgb(25,25,25)';
+        }
+        document.getElementById("searchBarDiv").style.padding = '0%';
+        document.getElementById("searchBarDiv").style.margin = '0%';
+    }
+    ;
+    </script>
+
+    <script type="text/javascript">
+    document.body.style.animation = 'none';
+    document.getElementById('topBar').style.animation = 'none';
+    document.getElementById('searchResultsDiv').style.animationName = 'toplaunch';
+    document.getElementById('searchResultsDiv').style.animationDelay = '0s';
+    document.getElementById('searchResultsDiv').style.animationDuration = '0.5s';
+    </script>
+
+    
+</body>
+
